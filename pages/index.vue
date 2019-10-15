@@ -1,36 +1,32 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio-new
-      </h1>
-      <h2 class="subtitle">
-        My slick Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
+  <div id="home" class="w-full">
+    <section class="banner relative flex items-center justify-center">
+      <div class="banner-bg absolute top-0 left-0 w-full h-full" />
+      <div class="banner-content relative z-20">
+        <div class="banner-title text-white-primary">
+          <span class="secondary-title font-normal font-nunito">
+            Hello, I am
+          </span>
+          <h1 class="primary-title font-poppins font-semibold">
+            Hector Vasquez
+          </h1>
+          <span class="secondary-title">
+            Frontend Developer with Vue.Js
+          </span>
+        </div>
+        <button
+          class="button font-nunito bg-green-primary text-white-primary font-semibold py-2 px-4 rounded shadow hover:shadow-none"
         >
-          GitHub
-        </a>
+          Contact Me
+        </button>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
-
 export default {
-  components: {
-    Logo
-  },
+  name: 'Home',
   head() {
     return {
       title: 'Hector Vasquez | Portfolio',
@@ -47,39 +43,26 @@ export default {
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+#home .banner {
+  height: 900px;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+#home .banner .banner-bg {
+  background: #1270e3;
+  background: -webkit-linear-gradient(to right, #1270e3, #59c2ff);
+  background: linear-gradient(to right, #1270e3, #59c2ff);
+  transform: skewY(-8deg);
+  transform-origin: top left;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+#home .banner .banner-title .secondary-title {
+  font-size: 25px;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+#home .banner .banner-title .primary-title {
+  font-size: 50px;
 }
-
-.links {
-  padding-top: 15px;
+#home .banner .banner-content .button {
+  margin-top: 60px;
+  width: 170px;
+  height: 55px;
+  font-size: 20px;
 }
 </style>
