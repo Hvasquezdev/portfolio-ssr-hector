@@ -10,7 +10,8 @@ module.exports = {
     fontFamily: {
       // Font families here!
       poppins: 'Poppins, sans-serif',
-      nunito: 'Nunito, sans-serif'
+      nunito: 'Nunito, sans-serif',
+      asap: 'Asap, sans-serif'
     },
     colors: {
       white: {
@@ -26,6 +27,13 @@ module.exports = {
       },
       green: {
         primary: '#A0D334'
+      },
+      grey: {
+        primary: '#7F8688',
+        secondary: '#929D9E'
+      },
+      yellow: {
+        primary: '#F3E367'
       }
     }
   },

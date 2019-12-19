@@ -1,14 +1,16 @@
 <template>
   <div class="relative flex flex-col items-center justify-center">
-    <VNavbar />
+    <TheNavbar />
     <nuxt />
   </div>
 </template>
 
 <script>
+import TheNavbar from '@/components/TheNavbar.vue';
+
 export default {
   components: {
-    VNavbar: () => import('@/components/Navbar.vue')
+    TheNavbar
   }
 };
 </script>

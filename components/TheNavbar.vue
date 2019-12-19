@@ -36,9 +36,11 @@ export default {
 
 <style lang="css">
 .navbar {
-  max-width: 1170px;
+  max-width: 1230px;
   margin-top: 30px;
   z-index: 99;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .navbar .navbar-left .navbar-brand {
   font-size: 28px;
