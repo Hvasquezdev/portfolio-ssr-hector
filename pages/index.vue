@@ -30,7 +30,9 @@
       id="services"
       class="services ml-auto mr-auto flex justify-between"
     >
-      <div class="my-services text-left">
+      <div
+        class="my-services text-left flex flex-col items-start justify-center"
+      >
         <h2 class="capitalize font-bold font-poppins text-dark-primary">
           My services
         </h2>
@@ -77,6 +79,34 @@
           </template>
         </service-card>
       </div>
+    </section>
+    <section class="contact-info relative">
+      <div class="overlay absolute"></div>
+      <div
+        class="contact-info__content relative z-10 text-center flex flex-col items-center justify-center"
+      >
+        <h2 class="font-poppins font-bold text-white-primary uppercase">
+          Contact Me
+        </h2>
+        <p class="font-nunito font-normal text-white-primary text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+          aliquam!
+        </p>
+        <base-button rounded bordered>
+          Hvasquezdev@gmail.com
+        </base-button>
+      </div>
+    </section>
+    <section class="skills flex flex-col justify-center items-center">
+      <h2
+        class="font-poppins font-bold text-dark-primary text-center capitalize"
+      >
+        My Skills
+      </h2>
+      <p class="font-nunito text-center text-dark-secondary">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+        laudantium molestiae adipisci sequi aliquam placeat!
+      </p>
     </section>
   </div>
 </template>
@@ -176,5 +206,58 @@ export default {
 }
 #home .services .services__right .service-card:not(:last-child) {
   margin-bottom: 30px;
+}
+#home .contact-info {
+  padding: 55px 30px;
+  background-image: url('~assets/images/contact-bg-min.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home .contact-info .overlay {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background: theme('colors.grey.primary');
+  background: -webkit-linear-gradient(
+    to top,
+    theme('colors.dark.primary'),
+    theme('colors.dark.secondary')
+  );
+  background: linear-gradient(
+    to top,
+    theme('colors.dark.primary'),
+    theme('colors.dark.secondary')
+  );
+  opacity: 0.5;
+}
+#home .contact-info .contact-info__content h2 {
+  font-size: 30px;
+  margin-bottom: 19px;
+}
+#home .contact-info .contact-info__content p {
+  font-size: 20px;
+  max-width: 535px;
+  margin-bottom: 30px;
+}
+#home .contact-info .contact-info__content .button {
+  padding: 14px 55px;
+  font-size: 18px;
+  line-height: 27px;
+}
+#home .skills {
+  padding: 70px 30px;
+}
+#home .skills h2 {
+  font-size: 30px;
+}
+#home .skills p {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 27px;
+  padding-bottom: 70px;
+  max-width: 535px;
 }
 </style>

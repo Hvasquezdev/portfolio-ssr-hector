@@ -15,15 +15,23 @@ export default {
       type: String,
       default: ''
     },
+    borderColor: {
+      type: String,
+      default: ''
+    },
     rounded: Boolean,
-    animated: Boolean
+    animated: Boolean,
+    bordered: Boolean,
+    transparent: Boolean
   },
   computed: {
     className() {
       return {
         'button--rounded': this.rounded,
         'button--animated': this.animated,
-        'button--yellow': this.color.toLowerCase() === 'yellow'
+        'button--yellow': this.color.toLowerCase() === 'yellow',
+        'button--bordered': this.bordered,
+        'button--transparent': this.transparent
       };
     }
   }
@@ -48,6 +56,19 @@ export default {
 }
 .button--yellow {
   background-color: theme('colors.yellow.primary');
+  color: theme('colors.dark.primary');
+}
+.button--transparent {
+  background-color: transparent;
+  color: theme('colors.white.primary');
+}
+.button--bordered {
+  border: 2px solid theme('colors.white.primary');
+  color: theme('colors.white.primary');
+  background-color: transparent;
+}
+.button--bordered:hover {
+  background-color: theme('colors.white.primary');
   color: theme('colors.dark.primary');
 }
 </style>

@@ -27,17 +27,24 @@
       </li>
     </ul>
 
-    <a
-      href="#"
-      class="button font-nunito font-semibold shadow flex items-center justify-center"
+    <base-button
+      class="font-semibold flex items-center justify-center"
+      bordered
+      rounded
+      transparent
     >
       Fiverr
-    </a>
+    </base-button>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'social-buttons',
+  components: {
+    BaseButton: () => import('@/components/BaseButton.vue')
+  }
+};
 </script>
 
 <style lang="css" scoped>
@@ -69,14 +76,6 @@ export default {};
 .social-links .button {
   font-size: 20px;
   padding: 0 40px;
-  border: 2px solid theme('colors.white.primary');
-  border-radius: 15101997px;
   height: 48px;
-  color: theme('colors.white.primary');
-  transition: all 0.3s;
-}
-.social-links .button:hover {
-  background-color: theme('colors.white.primary');
-  color: theme('colors.dark.primary');
 }
 </style>
