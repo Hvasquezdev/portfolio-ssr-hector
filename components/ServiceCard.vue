@@ -1,16 +1,16 @@
 <template>
   <div class="service-card flex" :class="className">
     <div class="service-card__media flex items-start">
-      <slot name="media" />
+      <slot name="media"></slot>
     </div>
     <div class="service-card__content">
       <h3 class="service-card__content__title font-poppins text-dark-primary">
-        <slot name="title" />
+        <slot name="title"></slot>
       </h3>
       <p
         class="service-card__content__description font-nunito text-dark-secondary"
       >
-        <slot name="description" />
+        <slot name="description"></slot>
       </p>
     </div>
   </div>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'service-card',
+  name: 'ServiceCard',
   props: {
     bordered: Boolean
   },

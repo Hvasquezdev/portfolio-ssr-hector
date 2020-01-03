@@ -1,7 +1,8 @@
 <template>
   <div id="home" class="w-full">
+    <!-- BANNER -->
     <section class="banner relative flex flex-col items-center justify-center">
-      <div class="banner-bg absolute top-0 left-0 w-full h-full" />
+      <div class="banner-bg absolute top-0 left-0 w-full h-full"></div>
       <div class="banner-content relative z-20 flex justify-between">
         <div class="banner-content__left">
           <div class="banner-title text-white-primary">
@@ -26,6 +27,8 @@
 
       <social-buttons />
     </section>
+
+    <!-- SERVICES -->
     <section
       id="services"
       class="services ml-auto mr-auto flex justify-between"
@@ -80,6 +83,8 @@
         </service-card>
       </div>
     </section>
+
+    <!-- CONTACT -->
     <section class="contact-info relative">
       <div class="overlay absolute"></div>
       <div
@@ -97,6 +102,8 @@
         </base-button>
       </div>
     </section>
+
+    <!-- SKILLS -->
     <section class="skills flex flex-col justify-center items-center">
       <h2
         class="font-poppins font-bold text-dark-primary text-center capitalize"
@@ -107,6 +114,8 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
         laudantium molestiae adipisci sequi aliquam placeat!
       </p>
+
+      <progress-skills />
     </section>
   </div>
 </template>
@@ -130,7 +139,8 @@ export default {
     DesktopScreen: () => import('@/components/DesktopScreen.vue'),
     SocialButtons: () => import('@/components/SocialButtons.vue'),
     BaseButton: () => import('@/components/BaseButton.vue'),
-    ServiceCard: () => import('@/components/ServiceCard.vue')
+    ServiceCard: () => import('@/components/ServiceCard.vue'),
+    ProgressSkills: () => import('@/components/ProgressSkills.vue')
   },
   methods: {
     prueba() {

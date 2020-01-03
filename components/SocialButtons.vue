@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  name: 'social-buttons',
+  name: 'SocialButtons',
   components: {
     BaseButton: () => import('@/components/BaseButton.vue')
   }

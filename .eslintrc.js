@@ -31,6 +31,13 @@ module.exports = {
         "singleQuote": true,
         "endOfLine":"auto"
       }
-    ]
+    ],
+    "vue/html-self-closing": ["error", {
+      "html": {
+        "void": "always",
+        "normal": "never",
+        "component": "any"
+      }
+    }]
   }
 }
