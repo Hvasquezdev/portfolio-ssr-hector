@@ -24,7 +24,8 @@ module.exports = {
         tertiary: '#5D5D5D'
       },
       blue: {
-        primary: '#5165FF'
+        primary: '#5165FF',
+        secondary: '#6048FF'
       },
       green: {
         primary: '#A0D334'

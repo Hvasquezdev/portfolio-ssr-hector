@@ -117,6 +117,25 @@
 
       <progress-skills />
     </section>
+
+    <!-- PROJECTS -->
+    <section
+      class="projects flex flex-col justify-center items-center bg-white-secondary"
+    >
+      <h2
+        class="font-poppins font-bold text-dark-primary text-center capitalize"
+      >
+        My Portfolio
+      </h2>
+      <p class="font-nunito text-center text-dark-secondary">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+        laudantium molestiae adipisci sequi aliquam placeat!
+      </p>
+      <h3 class="font-poppins font-medium text-green-primary relative">
+        Web Development
+      </h3>
+      <projects-list />
+    </section>
   </div>
 </template>
 
@@ -140,7 +159,8 @@ export default {
     SocialButtons: () => import('@/components/SocialButtons.vue'),
     BaseButton: () => import('@/components/BaseButton.vue'),
     ServiceCard: () => import('@/components/ServiceCard.vue'),
-    ProgressSkills: () => import('@/components/ProgressSkills.vue')
+    ProgressSkills: () => import('@/components/ProgressSkills.vue'),
+    ProjectsList: () => import('@/components/ProjectsList.vue')
   },
   methods: {
     prueba() {
@@ -269,5 +289,34 @@ export default {
   line-height: 27px;
   padding-bottom: 70px;
   max-width: 535px;
+}
+#home .projects {
+  padding: 70px 30px;
+}
+#home .projects h2 {
+  font-size: 30px;
+}
+#home .projects p {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 27px;
+  padding-bottom: 45px;
+  max-width: 535px;
+}
+#home .projects h3 {
+  margin-bottom: 90px;
+  font-size: 16px;
+  line-height: 27px;
+  cursor: pointer;
+}
+#home .projects h3::after {
+  content: '';
+  background-color: theme('colors.green.primary');
+  height: 1px;
+  width: 45%;
+  position: absolute;
+  bottom: -3.5px;
+  left: 0;
+  transition: all 0.3s;
 }
 </style>
