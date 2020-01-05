@@ -70,9 +70,10 @@ export default {
 <style scoped>
 .progress-skills {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 170px));
   column-gap: 80px;
   row-gap: 80px;
-  max-width: 1170px;
+  max-width: 1070px;
+  justify-content: center;
 }
 </style>

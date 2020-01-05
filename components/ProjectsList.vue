@@ -108,18 +108,32 @@ export default {
   grid-template-columns: repeat(var(--grid-columns), 1fr);
   column-gap: var(--grid-columns-gap);
 }
-.masonry__column .masonry__card:not(:last-child) {
-  margin-bottom: 30px;
-}
 .masonry.columns-2 {
   --grid-columns: 2;
 }
 .masonry.columns-3 {
   --grid-columns: 3;
 }
+.masonry__card {
+  border-radius: 14px;
+  overflow: hidden;
+}
 .masonry__card__overlay {
-  background-color: theme('colors.blue.secondary');
+  background: theme('colors.grey.primary');
+  background: -webkit-linear-gradient(
+    to top,
+    theme('colors.dark.primary'),
+    theme('colors.dark.secondary')
+  );
+  background: linear-gradient(
+    to top,
+    theme('colors.dark.primary'),
+    theme('colors.dark.secondary')
+  );
   opacity: 0.30;
+}
+.masonry__column .masonry__card:not(:last-child) {
+  margin-bottom: 30px;
 }
 .masonry img {
   width: 100%;

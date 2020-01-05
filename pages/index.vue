@@ -13,7 +13,8 @@
               Hector Vasquez
             </h1>
             <h2 class="secondary-title">
-              Frontend Developer with Vue.Js
+              Frontend Developer with
+              <strong class="text-yellow-primary">Vue.Js</strong>
             </h2>
           </div>
           <base-button rounded animated color="yellow">
@@ -52,7 +53,7 @@
         </base-button>
       </div>
       <div class="services__right">
-        <service-card bordered>
+        <service-card>
           <template v-slot:media>
             <img
               src="~/assets/svg/screen-gradient.svg"
@@ -67,7 +68,7 @@
           </template>
         </service-card>
 
-        <service-card bordered>
+        <service-card>
           <template v-slot:media>
             <img
               src="~/assets/svg/web-gradient.svg"
@@ -136,6 +137,39 @@
       </h3>
       <projects-list />
     </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews flex flex-col justify-center items-center">
+      <h2
+        class="font-poppins font-bold text-dark-primary text-center capitalize"
+      >
+        What My Clients Say
+      </h2>
+      <p class="font-nunito text-center text-dark-secondary">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+        laudantium molestiae adipisci sequi aliquam placeat!
+      </p>
+      <div class="reviews__cards w-full ml-auto mr-auto justify-center">
+        <base-card image-name="contact-bg-min.jpg" author-name="Hector Vasquez">
+          <template>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+            aliquid porro illum impedit, quisquam culpa?
+          </template>
+        </base-card>
+        <base-card image-name="contact-bg-min.jpg" author-name="Hector Vasquez">
+          <template>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+            aliquid porro illum impedit, quisquam culpa?
+          </template>
+        </base-card>
+        <base-card image-name="contact-bg-min.jpg" author-name="Hector Vasquez">
+          <template>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+            aliquid porro illum impedit, quisquam culpa?
+          </template>
+        </base-card>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -160,12 +194,8 @@ export default {
     BaseButton: () => import('@/components/BaseButton.vue'),
     ServiceCard: () => import('@/components/ServiceCard.vue'),
     ProgressSkills: () => import('@/components/ProgressSkills.vue'),
-    ProjectsList: () => import('@/components/ProjectsList.vue')
-  },
-  methods: {
-    prueba() {
-      console.log('hola');
-    }
+    ProjectsList: () => import('@/components/ProjectsList.vue'),
+    BaseCard: () => import('@/components/BaseCard.vue')
   }
 };
 </script>
@@ -212,7 +242,7 @@ export default {
 }
 #home .services {
   padding: 70px 30px;
-  max-width: 1170px;
+  max-width: 1230px;
 }
 #home .services .my-services {
   max-width: 500px;
@@ -318,5 +348,25 @@ export default {
   bottom: -3.5px;
   left: 0;
   transition: all 0.3s;
+}
+#home .reviews {
+  padding: 70px 30px 90px 30px;
+}
+#home .reviews h2 {
+  font-size: 30px;
+}
+#home .reviews p {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 27px;
+  padding-bottom: 45px;
+  max-width: 535px;
+}
+#home .reviews__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 370px));
+  column-gap: 30px;
+  row-gap: 30px;
+  max-width: 1170px;
 }
 </style>
