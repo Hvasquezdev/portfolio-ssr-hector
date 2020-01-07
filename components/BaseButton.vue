@@ -42,7 +42,7 @@ export default {
 .button {
   background-color: theme('colors.green.primary');
   color: theme('colors.white.primary');
-  border-radius: 14px;
+  border-radius: 4px;
   transition: all 0.3s;
 }
 .button--animated:hover {

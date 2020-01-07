@@ -115,7 +115,7 @@ export default {
   --grid-columns: 3;
 }
 .masonry__card {
-  border-radius: 14px;
+  border-radius: 4px;
   overflow: hidden;
 }
 .masonry__card__overlay {

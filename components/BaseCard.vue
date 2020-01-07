@@ -39,7 +39,7 @@ export default {
   padding: 31px 31px 35px 31px;
   box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
   max-width: 450px;
-  border-radius: 14px;
+  border-radius: 4px;
 }
 .card__review {
   font-size: 14px;

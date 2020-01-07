@@ -17,7 +17,7 @@
               <strong class="text-yellow-primary">Vue.Js</strong>
             </h2>
           </div>
-          <base-button rounded animated color="yellow">
+          <base-button animated color="yellow">
             Contact Me
           </base-button>
         </div>
@@ -48,7 +48,7 @@
           fuga sequi animi laboriosam, sed iure. Blanditiis rerum eum cupiditate
           sed quia. Fuga, velit assumenda.
         </p>
-        <base-button rounded animated color="yellow">
+        <base-button animated color="yellow">
           Hire Me
         </base-button>
       </div>
@@ -98,7 +98,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
           aliquam!
         </p>
-        <base-button rounded bordered>
+        <base-button bordered>
           Hvasquezdev@gmail.com
         </base-button>
       </div>
@@ -168,6 +168,22 @@
             aliquid porro illum impedit, quisquam culpa?
           </template>
         </base-card>
+      </div>
+    </section>
+
+    <!-- WORK STATUS -->
+    <section
+      class="work-status bg-white-secondary flex justify-center items-center"
+    >
+      <div
+        class="work-status__wrapper flex justify-between items-center ml-auto mr-auto w-full"
+      >
+        <h3 class="font-nunito font-bold text-dark-primary">
+          I will be available for new contracts soon. Want to talk with me?
+        </h3>
+        <base-button animated color="yellow">
+          Contact Me
+        </base-button>
       </div>
     </section>
   </div>
@@ -368,5 +384,20 @@ export default {
   column-gap: 30px;
   row-gap: 30px;
   max-width: 1170px;
+}
+#home .work-status {
+  padding: 106px 30px;
+}
+#home .work-status__wrapper {
+  max-width: 1170px;
+}
+#home .work-status__wrapper h3 {
+  font-size: 30px;
+  margin-right: 30px;
+}
+#home .work-status__wrapper .button {
+  padding: 20px 71px;
+  font-size: 18px;
+  font-weight: 600;
 }
 </style>
