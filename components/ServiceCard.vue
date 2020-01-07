@@ -37,7 +37,7 @@ export default {
   padding: 34px 30px;
   box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
   border-radius: 14px;
-  max-width: 340px;
+  max-width: 360px;
 }
 .service-card--bordered {
   border: 1px solid theme('colors.yellow.primary');
@@ -45,6 +45,7 @@ export default {
 .service-card__media {
   font-size: 35px;
   margin-right: 20px;
+  min-width: 35px;
 }
 .service-card__content__title {
   font-size: 16px;

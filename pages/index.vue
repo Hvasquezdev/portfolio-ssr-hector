@@ -17,17 +17,24 @@
               <strong class="text-yellow-primary">Vue.Js</strong>
             </h2>
           </div>
-          <base-button animated color="yellow">
+          <base-button v-scroll-to="'#contact'" animated color="yellow">
             Contact Me
           </base-button>
         </div>
-        <div class="banner-content__right">
+        <div v-if="false" class="banner-content__right">
           <desktop-screen width="400" height="319" />
         </div>
       </div>
 
       <social-buttons />
     </section>
+
+    <!-- INFORMATION -->
+    <div class="page-info bg-yellow-primary pt-5 pb-5">
+      <h3 class="font-poppins font-bold text-center w-full text-dark-primary">
+        Mobile version of this page is in development
+      </h3>
+    </div>
 
     <!-- SERVICES -->
     <section
@@ -41,37 +48,44 @@
           My services
         </h2>
         <p class="font-nunito text-dark-secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          perferendis officia nihil quasi quia praesentium obcaecati reiciendis
-          ut dolore fugit magni blanditiis possimus, ab explicabo. Illum
-          expedita nulla cumque est quas aut cupiditate laudantium dignissimos
-          fuga sequi animi laboriosam, sed iure. Blanditiis rerum eum cupiditate
-          sed quia. Fuga, velit assumenda.
+          Hello, I'm Hector Vasquez a Front End developer, workin with
+          JavaScript and Vue.Js for almost 2 years. Writing code daily in
+          personal projects and profresional projects. Learning new things every
+          day about web development to improve my acknowledge. Writing code
+          since I was 17 years old.
+          <br />
+          My work is entirely based around web development focused in Front End
+          with modern JavaScript and Vue.Js.
+          <br /><br />
+          <strong class="uppercase">Lenguajes that I speak:</strong>
+          <br />
+          Spanish - <strong>Native</strong>
+          <br />
+          English - <strong>Learning</strong>
         </p>
-        <base-button animated color="yellow">
+        <base-button v-scroll-to="'#contact'" animated color="yellow">
           Hire Me
         </base-button>
       </div>
       <div class="services__right">
         <service-card>
           <template v-slot:media>
-            <img
-              src="~/assets/svg/screen-gradient.svg"
-              alt="Web HTML5 and Css3"
-            />
+            <img src="~/assets/svg/web-gradient.svg" alt="Web HTML5 and Css3" />
           </template>
           <template v-slot:title>
             HTML5 &amp; Css3
           </template>
           <template v-slot:description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ad.
+            HTML5 and Css with Flexbox and Grid are the first skills that I
+            learn in this world of web development, creating mobile-first web
+            interfaces since 2 years ago
           </template>
         </service-card>
 
         <service-card>
           <template v-slot:media>
             <img
-              src="~/assets/svg/web-gradient.svg"
+              src="~/assets/svg/screen-gradient.svg"
               alt="JavaScript - Vue.Js - Front-End"
             />
           </template>
@@ -79,14 +93,17 @@
             JavaScript - Vue.Js
           </template>
           <template v-slot:description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ad.
+            JavaScript the programing lenguaje of the web.
+            <br />
+            I started with JavaScript creating my firsts dynamic pages from
+            scratch, I'm now working with Vue.Js to create the best web apps.
           </template>
         </service-card>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="contact-info relative">
+    <section id="contact" class="contact-info relative">
       <div class="overlay absolute"></div>
       <div
         class="contact-info__content relative z-10 text-center flex flex-col items-center justify-center"
@@ -95,25 +112,34 @@
           Contact Me
         </h2>
         <p class="font-nunito font-normal text-white-primary text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-          aliquam!
+          Do you want to talk with me about a project?
+          <br />
+          Remote - Full Time - Part Time - Freelance
+          <br />
+          Do you have a job offer?
+          <br />
+          Send me an email
         </p>
-        <base-button bordered>
+        <div class="contact__email">
           Hvasquezdev@gmail.com
-        </base-button>
+        </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="skills flex flex-col justify-center items-center">
+    <section
+      id="skills"
+      class="skills flex flex-col justify-center items-center"
+    >
       <h2
         class="font-poppins font-bold text-dark-primary text-center capitalize"
       >
         My Skills
       </h2>
       <p class="font-nunito text-center text-dark-secondary">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-        laudantium molestiae adipisci sequi aliquam placeat!
+        As a Front End developer I learned and still learning the best
+        technologies to made the best and full responsive (mobile first) and
+        with a great performant Web Apps
       </p>
 
       <progress-skills />
@@ -121,6 +147,7 @@
 
     <!-- PROJECTS -->
     <section
+      id="projects"
       class="projects flex flex-col justify-center items-center bg-white-secondary"
     >
       <h2
@@ -129,8 +156,8 @@
         My Portfolio
       </h2>
       <p class="font-nunito text-center text-dark-secondary">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-        laudantium molestiae adipisci sequi aliquam placeat!
+        Here are some of the works that I made as a Front End developer and in
+        some working as a FullStack
       </p>
       <h3 class="font-poppins font-medium text-green-primary relative">
         Web Development
@@ -139,7 +166,10 @@
     </section>
 
     <!-- REVIEWS -->
-    <section class="reviews flex flex-col justify-center items-center">
+    <section
+      id="reviews"
+      class="reviews flex flex-col justify-center items-center"
+    >
       <h2
         class="font-poppins font-bold text-dark-primary text-center capitalize"
       >
@@ -150,22 +180,27 @@
         laudantium molestiae adipisci sequi aliquam placeat!
       </p>
       <div class="reviews__cards w-full ml-auto mr-auto justify-center">
-        <base-card image-name="contact-bg-min.jpg" author-name="Hector Vasquez">
+        <base-card author-name="Gautambakshi">
           <template>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            aliquid porro illum impedit, quisquam culpa?
+            We enjoyed working with Hector. He was hard working and quick to
+            respond to issues and very professional. He also made valuable
+            suggestions on how to improve our workflow with UI developers. We
+            would definitely work with Hector again.
           </template>
         </base-card>
-        <base-card image-name="contact-bg-min.jpg" author-name="Hector Vasquez">
+        <base-card author-name="Charl2lie">
           <template>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            aliquid porro illum impedit, quisquam culpa?
+            We had the chance to work with Hector on a web-app - and the
+            communication was fluid, the product very much in line with our need
+            - and the collaboration on par with the highest standards. He is a
+            great collaborator - and we recommend warmly his services.
           </template>
         </base-card>
-        <base-card image-name="contact-bg-min.jpg" author-name="Hector Vasquez">
+        <base-card author-name="Zipidy">
           <template>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            aliquid porro illum impedit, quisquam culpa?
+            This seller is amazing. He wanted to assure that he can complete my
+            request before putting the order in. I am truly amazed and will be
+            ordering again.
           </template>
         </base-card>
       </div>
@@ -181,7 +216,7 @@
         <h3 class="font-nunito font-bold text-dark-primary">
           I will be available for new contracts soon. Want to talk with me?
         </h3>
-        <base-button animated color="yellow">
+        <base-button v-scroll-to="'#contact'" animated color="yellow">
           Contact Me
         </base-button>
       </div>
@@ -199,7 +234,8 @@ export default {
         {
           hid: 'home-description',
           name: 'description',
-          content: 'Portfolio description'
+          content:
+            'Hello, I am Hector Vasquez a Front End developer, workin with JavaScript and Vue.Js for almost 2 years. Writing code daily in personal projects and profresional projects'
         }
       ]
     };
@@ -253,9 +289,6 @@ export default {
   font-size: 18px;
   line-height: 24px;
 }
-#home .banner .banner-content .banner-content__right {
-  /* max-width: 300px; */
-}
 #home .services {
   padding: 70px 30px;
   max-width: 1230px;
@@ -277,11 +310,19 @@ export default {
   line-height: 27px;
   padding: 14px 55px;
 }
+#home .services .services__right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
 #home .services .services__right .service-card:first-child {
-  margin-left: -120px;
+  margin-right: 120px;
 }
 #home .services .services__right .service-card:not(:last-child) {
   margin-bottom: 30px;
+}
+#home .services .services__right .service-card:last-child {
+  align-self: flex-end;
 }
 #home .contact-info {
   padding: 55px 30px;
@@ -318,10 +359,19 @@ export default {
   max-width: 535px;
   margin-bottom: 30px;
 }
-#home .contact-info .contact-info__content .button {
+#home .contact-info .contact-info__content .contact__email {
   padding: 14px 55px;
   font-size: 18px;
   line-height: 27px;
+  border: 2px solid theme('colors.white.primary');
+  color: theme('colors.white.primary');
+  background-color: transparent;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+#home .contact-info .contact-info__content .contact__email:hover {
+  background-color: theme('colors.white.primary');
+  color: theme('colors.dark.primary');
 }
 #home .skills {
   padding: 70px 30px;
@@ -384,6 +434,11 @@ export default {
   column-gap: 30px;
   row-gap: 30px;
   max-width: 1170px;
+}
+#home .reviews__cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #home .work-status {
   padding: 106px 30px;

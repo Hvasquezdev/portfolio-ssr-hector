@@ -24,28 +24,44 @@ export default {
     return {
       items: [
         {
-          image: 'project-01.png',
-          name: 'project 01'
+          image: 'daniel-web-min.png',
+          name: 'Fiverr - Daniel website'
         },
         {
-          image: 'project-02.png',
-          name: 'project 02'
+          image: 'daniel-landing-min.png',
+          name: 'Fiverr - Daniel landing page'
         },
         {
-          image: 'project-03.png',
-          name: 'project 03'
+          image: 'fraction-min.png',
+          name: 'Fiverr - Fraction website'
         },
         {
-          image: 'project-04.png',
-          name: 'project 04'
+          image: 'marketplace-min.png',
+          name: 'Fiverr - 15Rock Marketplace'
         },
         {
-          image: 'project-05.png',
-          name: 'project 05'
+          image: '15rock-min.png',
+          name: 'Fiver - 15Rock Web App'
         },
         {
-          image: 'project-06.png',
-          name: 'project 06'
+          image: 'ideation-min.png',
+          name: 'Fiverr - Ideation web app'
+        },
+        {
+          image: 'vueMusic-comp-min.png',
+          name: 'Platzi - Vue music project'
+        },
+        {
+          image: 'sparesbox-comp-min.png',
+          name: 'Fiverr - Sparexbox website'
+        },
+        {
+          image: 'cart-comp-min.png',
+          name: 'FreeCodeCamp project'
+        },
+        {
+          image: 'policia-comp-min.png',
+          name: 'Policia Municipal web app'
         }
       ],
       columns: 3,
@@ -117,20 +133,22 @@ export default {
 .masonry__card {
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
 }
 .masonry__card__overlay {
   background: theme('colors.grey.primary');
   background: -webkit-linear-gradient(
-    to top,
-    theme('colors.dark.primary'),
+    to bottom,
+    theme('colors.transparent'),
     theme('colors.dark.secondary')
   );
   background: linear-gradient(
-    to top,
-    theme('colors.dark.primary'),
+    to bottom,
+    theme('colors.transparent'),
     theme('colors.dark.secondary')
   );
-  opacity: 0.30;
+  /* opacity: 0.30; */
+  opacity: 0;
 }
 .masonry__column .masonry__card:not(:last-child) {
   margin-bottom: 30px;

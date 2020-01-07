@@ -10,6 +10,9 @@
         :alt="authorName"
         class="card__author__image"
       />
+      <div v-else class="card__author__image">
+        {{ authorName[0] }}
+      </div>
       <div class="card__author__info">
         <h4 class="font-poppins font-medium text-dark-primary capitalize">
           {{ authorName || '--' }}
@@ -52,5 +55,12 @@ export default {
   object-fit: cover;
   border-radius: 50%;
   margin-right: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: theme('colors.yellow.primary');
+  color: theme('colors.white.primary');
+  font-family: theme('fontFamily.nunito');
 }
 </style>

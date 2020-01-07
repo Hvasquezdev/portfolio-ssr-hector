@@ -11,16 +11,16 @@
     </div>
     <div class="navbar-right">
       <ul class="flex items-center font-nunito font-normal capitalize">
-        <li class="cursor-pointer text-white-primary">
+        <li v-scroll-to="'#services'" class="cursor-pointer text-white-primary">
           Services
         </li>
-        <li class="cursor-pointer text-white-primary">
+        <li v-scroll-to="'#skills'" class="cursor-pointer text-white-primary">
           Skills
         </li>
-        <li class="cursor-pointer text-white-primary">
+        <li v-scroll-to="'#projects'" class="cursor-pointer text-white-primary">
           Projects
         </li>
-        <li class="cursor-pointer text-white-primary">
+        <li v-scroll-to="'#reviews'" class="cursor-pointer text-white-primary">
           Reviews
         </li>
       </ul>

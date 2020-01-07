@@ -14,6 +14,7 @@ module.exports = {
       asap: 'Asap, sans-serif'
     },
     colors: {
+      transparent: 'transparent',
       white: {
         primary: '#FFFFFF',
         secondary: '#FAFAFF'

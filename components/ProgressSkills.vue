@@ -2,59 +2,52 @@
   <div class="progress-skills">
     <base-progress
       label="HTML5"
-      percent="86"
+      percent="84"
       gradient
       gradient-initial="#F5317F"
       gradient-end="#FF7C6E"
     ></base-progress>
     <base-progress
-      label="CSS3"
-      percent="86"
+      label="CSS3: Flex - Grid"
+      percent="81"
       gradient
       gradient-initial="#1270E3"
       gradient-end="#59C2FF"
     ></base-progress>
     <base-progress
+      label="Bulma Css"
+      percent="75"
+      gradient
+      gradient-initial="#00d1b2"
+      gradient-end="#00d1b2"
+    ></base-progress>
+    <base-progress
       label="JavaScript"
-      percent="86"
+      percent="83"
       gradient
       gradient-initial="#FF8359"
       gradient-end="#FFDF40"
     ></base-progress>
     <base-progress
-      label="Vue.Js"
-      percent="86"
+      label="Node.Js"
+      percent="71"
       gradient
-      gradient-initial="#2CBFC7"
+      gradient-initial="#23d160"
       gradient-end="#46EEAA"
     ></base-progress>
     <base-progress
-      label="HTML5"
-      percent="86"
-      gradient
-      gradient-initial="#F5317F"
-      gradient-end="#FF7C6E"
-    ></base-progress>
-    <base-progress
-      label="CSS3"
-      percent="86"
-      gradient
-      gradient-initial="#1270E3"
-      gradient-end="#59C2FF"
-    ></base-progress>
-    <base-progress
-      label="JavaScript"
-      percent="86"
-      gradient
-      gradient-initial="#FF8359"
-      gradient-end="#FFDF40"
-    ></base-progress>
-    <base-progress
       label="Vue.Js"
-      percent="86"
+      percent="79"
       gradient
-      gradient-initial="#2CBFC7"
-      gradient-end="#46EEAA"
+      gradient-initial="#4fc08d"
+      gradient-end="#35495e"
+    ></base-progress>
+    <base-progress
+      label="Git - Github"
+      percent="81"
+      gradient
+      gradient-initial="#f56e56"
+      gradient-end="#f14e32"
     ></base-progress>
   </div>
 </template>

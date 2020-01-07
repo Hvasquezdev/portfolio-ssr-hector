@@ -3,7 +3,8 @@
     <ul class="flex">
       <li class="flex">
         <a
-          href="#"
+          href="https://github.com/Hvasquezdev"
+          target="_blank"
           class="w-full h-full flex items-center justify-center shadow"
         >
           <font-awesome-icon :icon="['fab', 'github']" />
@@ -11,7 +12,8 @@
       </li>
       <li class="flex">
         <a
-          href="#"
+          href="https://twitter.com/HecTorVasquez97"
+          target="_blank"
           class="w-full h-full flex items-center justify-center shadow"
         >
           <font-awesome-icon :icon="['fab', 'twitter']" />
@@ -19,7 +21,8 @@
       </li>
       <li class="flex">
         <a
-          href="#"
+          href="https://www.linkedin.com/in/hector-vasquez-dev/"
+          target="_blank"
           class="w-full h-full flex items-center justify-center shadow"
         >
           <font-awesome-icon :icon="['fab', 'linkedin-in']" />
@@ -32,6 +35,7 @@
       bordered
       rounded
       transparent
+      @click.native="goFiverr"
     >
       Fiverr
     </base-button>
@@ -43,6 +47,12 @@ export default {
   name: 'SocialButtons',
   components: {
     BaseButton: () => import('@/components/BaseButton.vue')
+  },
+  methods: {
+    goFiverr() {
+      const url = 'https://www.fiverr.com/hector398';
+      window.open(url, '_blank');
+    }
   }
 };
 </script>
@@ -68,6 +78,7 @@ export default {
   border: 2px solid theme('colors.yellow.primary');
   color: theme('colors.dark.primary');
   transition: all 0.3s;
+  outline: none;
 }
 .social-links ul li a:hover {
   background-color: transparent;
@@ -77,5 +88,6 @@ export default {
   font-size: 20px;
   padding: 0 40px;
   height: 48px;
+  outline: none;
 }
 </style>
