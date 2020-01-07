@@ -1,0 +1,105 @@
+<template>
+  <footer
+    class="footer text-center w-full flex flex-col justify-center items-center"
+  >
+    <div class="footer__info w-full">
+      <div class="footer__info__item">
+        <span class="icon text-white">
+          <font-awesome-icon :icon="['fas', 'phone-alt']" />
+        </span>
+        <div class="text font-nunito">
+          <strong class="font-nunito">
+            Phone:
+          </strong>
+          Whatsapp: (+58)412-8580282
+        </div>
+      </div>
+      <div class="footer__info__item">
+        <span class="icon text-white">
+          <font-awesome-icon :icon="['fas', 'envelope']" />
+        </span>
+        <div class="text font-nunito">
+          <strong class="font-nunito">
+            Email:
+          </strong>
+          hvasquezdev@gmail.com
+        </div>
+      </div>
+      <div class="footer__info__item">
+        <span class="icon text-white">
+          <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
+        </span>
+        <div class="text font-nunito">
+          <strong class="font-nunito">
+            My Address:
+          </strong>
+          <address>
+            Ciudad Bolívar, Venezuela
+          </address>
+        </div>
+      </div>
+      <div class="footer__info__address"></div>
+    </div>
+    <p class="font-nunito text-white-primary">
+      Made with
+      <span class="text-yellow-primary">
+        <font-awesome-icon :icon="['fas', 'heart']" />
+      </span>
+      by Hector Vasquez
+    </p>
+  </footer>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="css" scoped>
+.footer {
+  padding: 48px 30px;
+  background: theme('colors.dark.primary');
+}
+.footer__info {
+  max-width: 1170px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid theme('colors.white.primary');
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.footer__info__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__info__item .icon {
+  min-width: 38px;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 50%;
+  border: 1px solid theme('colors.white.primary');
+  color: theme('colors.white.primary');
+  margin-right: 13px;
+}
+.footer__info__item .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: theme('colors.white.primary');
+  font-size: 14px;
+}
+.footer__info__item .text address {
+  font-style: normal;
+}
+.footer__info__item .text:not(:last-child) {
+  margin-right: 20px;
+}
+.footer p {
+  font-size: 20px;
+}
+</style>
