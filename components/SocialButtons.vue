@@ -7,7 +7,9 @@
           target="_blank"
           class="w-full h-full flex items-center justify-center shadow"
         >
-          <font-awesome-icon :icon="['fab', 'github']" />
+          <client-only>
+            <font-awesome-icon :icon="['fab', 'github']" />
+          </client-only>
         </a>
       </li>
       <li class="flex">
@@ -16,7 +18,9 @@
           target="_blank"
           class="w-full h-full flex items-center justify-center shadow"
         >
-          <font-awesome-icon :icon="['fab', 'twitter']" />
+          <client-only>
+            <font-awesome-icon :icon="['fab', 'twitter']" />
+          </client-only>
         </a>
       </li>
       <li class="flex">
@@ -25,7 +29,9 @@
           target="_blank"
           class="w-full h-full flex items-center justify-center shadow"
         >
-          <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+          <client-only>
+            <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+          </client-only>
         </a>
       </li>
     </ul>
@@ -83,6 +89,9 @@ export default {
 .social-links ul li a:hover {
   background-color: transparent;
   color: theme('colors.yellow.primary');
+}
+.social-links ul li a svg {
+  width: 20px;
 }
 .social-links .button {
   font-size: 20px;

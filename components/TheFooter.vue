@@ -5,7 +5,9 @@
     <div class="footer__info w-full">
       <div class="footer__info__item">
         <span class="icon text-white">
-          <font-awesome-icon :icon="['fas', 'phone-alt']" />
+          <client-only>
+            <font-awesome-icon :icon="['fas', 'phone-alt']" />
+          </client-only>
         </span>
         <div class="text font-nunito">
           <strong class="font-nunito">
@@ -16,7 +18,9 @@
       </div>
       <div class="footer__info__item">
         <span class="icon text-white">
-          <font-awesome-icon :icon="['fas', 'envelope']" />
+          <client-only>
+            <font-awesome-icon :icon="['fas', 'envelope']" />
+          </client-only>
         </span>
         <div class="text font-nunito">
           <strong class="font-nunito">
@@ -27,7 +31,9 @@
       </div>
       <div class="footer__info__item">
         <span class="icon text-white">
-          <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
+          <client-only>
+            <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
+          </client-only>
         </span>
         <div class="text font-nunito">
           <strong class="font-nunito">
@@ -41,11 +47,7 @@
       <div class="footer__info__address"></div>
     </div>
     <p class="font-nunito text-white-primary">
-      Made with
-      <span class="text-yellow-primary">
-        <font-awesome-icon :icon="['fas', 'heart']" />
-      </span>
-      by Hector Vasquez
+      Made with &#60;3 by Hector Vasquez
     </p>
   </footer>
 </template>
@@ -86,6 +88,9 @@ export default {};
   color: theme('colors.white.primary');
   margin-right: 13px;
 }
+.footer__info__item .icon svg {
+  width: 14px;
+}
 .footer__info__item .text {
   display: flex;
   flex-direction: column;
@@ -101,5 +106,8 @@ export default {};
 }
 .footer p {
   font-size: 20px;
+}
+.footer p svg {
+  width: 20px;
 }
 </style>

@@ -33,7 +33,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~/plugins/fontawesome.js',
+    { src: '~/plugins/fontawesome.js', ssr: false },
     '~/plugins/vue-scrollto.js'
   ],
   /*
