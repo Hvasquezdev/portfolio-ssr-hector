@@ -14,6 +14,8 @@
             </h1>
             <h2 class="secondary-title">
               Frontend Developer with
+              <strong class="text-yellow-primary">JavaScript</strong>
+              and
               <strong class="text-yellow-primary">Vue.Js</strong>
             </h2>
           </div>
@@ -225,17 +227,43 @@
 </template>
 
 <script>
+const url = 'https://www.hectorvasquez.me/';
+const title = 'Hector Vasquez | Portfolio';
+const description =
+  'Hello, I am Hector Vasquez a Front End developer, workin with JavaScript and VueJs for almost 2 years. Writing code daily in personal and profresional projects';
+
 export default {
   name: 'Home',
   head() {
     return {
-      title: 'Hector Vasquez | Portfolio',
+      title: title,
       meta: [
         {
           hid: 'home-description',
           name: 'description',
           content:
-            'Hello, I am Hector Vasquez a Front End developer, workin with JavaScript and Vue.Js for almost 2 years. Writing code daily in personal projects and profresional projects'
+            'Hello, I am Hector Vasquez a Front End developer, workin with JavaScript and VueJs for almost 2 years. Writing code daily in personal and profresional projects'
+        },
+        { hid: 'og:url', property: 'og:url', content: url },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:title', property: 'og:title', content: title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: description
+        },
+        // Twitter
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@HecTorVasquez97'
+        },
+        { hid: 'twitter:title', name: 'twitter:title', content: title },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: description
         }
       ]
     };
