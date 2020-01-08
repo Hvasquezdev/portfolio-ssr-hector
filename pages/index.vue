@@ -178,8 +178,8 @@
         What My Clients Say
       </h2>
       <p class="font-nunito text-center text-dark-secondary">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-        laudantium molestiae adipisci sequi aliquam placeat!
+        Reviews of some of the projects in which I have collaborated these last
+        2 years as a Freelance Front End Developer
       </p>
       <div class="reviews__cards w-full ml-auto mr-auto justify-center">
         <base-card author-name="Gautambakshi">
