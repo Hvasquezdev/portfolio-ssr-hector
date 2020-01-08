@@ -24,43 +24,43 @@ export default {
     return {
       items: [
         {
-          image: 'daniel-web-min.png',
+          image: 'daniel-web-min.jpg',
           name: 'Fiverr - Daniel website'
         },
         {
-          image: 'daniel-landing-min.png',
+          image: 'daniel-landing-min.jpg',
           name: 'Fiverr - Daniel landing page'
         },
         {
-          image: 'fraction-min.png',
+          image: 'fraction-min.jpg',
           name: 'Fiverr - Fraction website'
         },
         {
-          image: 'marketplace-min.png',
+          image: 'marketplace-min.jpg',
           name: 'Fiverr - 15Rock Marketplace'
         },
         {
-          image: '15rock-min.png',
+          image: '15rock-min.jpg',
           name: 'Fiver - 15Rock Web App'
         },
         {
-          image: 'ideation-min.png',
+          image: 'ideation-min.jpg',
           name: 'Fiverr - Ideation web app'
         },
         {
-          image: 'vueMusic-comp-min.png',
+          image: 'vueMusic-comp-min.jpg',
           name: 'Platzi - Vue music project'
         },
         {
-          image: 'sparesbox-comp-min.png',
+          image: 'sparesbox-comp-min.jpg',
           name: 'Fiverr - Sparexbox website'
         },
         {
-          image: 'cart-comp-min.png',
+          image: 'cart-comp-min.jpg',
           name: 'FreeCodeCamp project'
         },
         {
-          image: 'policia-comp-min.png',
+          image: 'policia-comp-min.jpg',
           name: 'Policia Municipal web app'
         }
       ],
