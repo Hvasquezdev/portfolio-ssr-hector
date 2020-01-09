@@ -7,9 +7,7 @@
     <v-services></v-services>
 
     <!-- CONTACT -->
-    <lazy-component>
-      <v-contact></v-contact>
-    </lazy-component>
+    <v-contact></v-contact>
 
     <!-- SKILLS -->
     <v-skills></v-skills>
@@ -72,7 +70,7 @@ export default {
     VServices: () => import('@/components/home/Services.vue'),
     VContact: () => import('@/components/home/Contact.vue'),
     VSkills: () => import('@/components/home/Skills.vue'),
-    VProjects: () => import('@/components/home/Projects.vue'),
+    VProjects: () => import(/* webpackPrefetch: true */ '@/components/home/Projects.vue'),
     VReviews: () => import('@/components/home/Reviews.vue'),
     VStatus: () => import('@/components/home/Status.vue')
   }
