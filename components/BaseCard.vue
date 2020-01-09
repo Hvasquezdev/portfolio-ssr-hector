@@ -6,8 +6,9 @@
     <div class="card__author flex items-center">
       <img
         v-if="imageName"
-        :src="require(`~/assets/images/${imageName}`)"
+        v-lazy="getImage(imageName)"
         :alt="authorName"
+        :data-src="getPlaceholderImage"
         class="card__author__image"
       />
       <div v-else class="card__author__image">
@@ -32,6 +33,14 @@ export default {
     authorName: {
       type: String,
       default: ''
+    }
+  },
+  methods: {
+    getImage(name) {
+      return require(`~/assets/images/${name}`);
+    },
+    getPlaceholderImage() {
+      return require('~/assets/images/placeholder-image-min.jpg');
     }
   }
 };

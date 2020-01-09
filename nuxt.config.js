@@ -33,8 +33,10 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/fontawesome.js', ssr: false },
-    '~/plugins/vue-scrollto.js'
+    '~/plugins/components',
+    '~/plugins/vue-scrollto.js',
+    '~/plugins/vue-lazyLoad.js',
+    { src: '~/plugins/fontawesome.js', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -46,7 +48,14 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    '@nuxtjs/robots',
+    'nuxt-imagemin'
+  ],
+  robots: {
+    UserAgent: '*',
+    Disallow: ''
+  },
   /*
    ** Build configuration
    */
@@ -69,6 +78,20 @@ export default {
       plugins: {
         tailwindcss: path.resolve(__dirname, './tailwind.config.js')
       }
-    }
+    },
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    },
+    // analyze: true
   }
 };

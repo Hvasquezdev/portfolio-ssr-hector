@@ -8,10 +8,13 @@
       <template v-for="(item, itemIndex) in column.items">
         <div :key="item.name + itemIndex" class="masonry__card relative">
           <div class="masonry__card__overlay absolute w-full h-full"></div>
-          <img
-            :src="require(`~/assets/images/${item.image}`)"
-            :alt="item.name"
-          />
+          <client-only>
+            <img
+              v-lazy="getImage(item.image)"
+              :alt="item.name"
+              :data-src="getPlaceholderImage"
+            />
+          </client-only>
         </div>
       </template>
     </div>
@@ -79,6 +82,12 @@ export default {
     this.initMasonry(this.columns);
   },
   methods: {
+    getImage(name) {
+      return require(`~/assets/images/${name}`);
+    },
+    getPlaceholderImage() {
+      return require('~/assets/images/placeholder-image-min.jpg');
+    },
     initMasonry(columns) {
       this.isLoaded = false;
       const masonry = this.$refs.masonry;
