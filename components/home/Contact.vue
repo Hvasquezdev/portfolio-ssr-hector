@@ -55,13 +55,13 @@
   margin-bottom: 19px;
 }
 #home .contact-info .contact-info__content p {
-  font-size: 20px;
+  font-size: 16px;
   max-width: 535px;
   margin-bottom: 30px;
 }
 #home .contact-info .contact-info__content .contact__email {
-  padding: 14px 55px;
-  font-size: 18px;
+  padding: 14px 40px;
+  font-size: 16px;
   line-height: 27px;
   border: 2px solid theme('colors.white.primary');
   color: theme('colors.white.primary');
@@ -72,5 +72,14 @@
 #home .contact-info .contact-info__content .contact__email:hover {
   background-color: theme('colors.white.primary');
   color: theme('colors.dark.primary');
+}
+@screen md {
+  #home .contact-info .contact-info__content p {
+    font-size: 20px;
+  }
+  #home .contact-info .contact-info__content .contact__email {
+    padding: 14px 55px;
+    font-size: 18px;
+  }
 }
 </style>

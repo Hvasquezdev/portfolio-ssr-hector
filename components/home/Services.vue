@@ -1,6 +1,11 @@
 <template>
-  <section id="services" class="services ml-auto mr-auto flex justify-between">
-    <div class="my-services text-left flex flex-col items-start justify-center">
+  <section
+    id="services"
+    class="services ml-auto mr-auto flex flex-col justify-center items-center lg:flex-row lg:justify-between"
+  >
+    <div
+      class="my-services text-center flex flex-col items-center justify-center lg:text-justify lg:items-start"
+    >
       <h2 class="capitalize font-bold font-poppins text-dark-primary">
         My services
       </h2>
@@ -93,15 +98,23 @@ export default {
 #home .services .services__right {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-}
-#home .services .services__right .service-card:first-child {
-  margin-right: 120px;
+  margin-top: 60px;
 }
 #home .services .services__right .service-card:not(:last-child) {
   margin-bottom: 30px;
 }
-#home .services .services__right .service-card:last-child {
-  align-self: flex-end;
+@screen md {
+  #home .services .services__right .service-card:first-child {
+    margin-right: 120px;
+  }
+  #home .services .services__right .service-card:last-child {
+    align-self: flex-end;
+  }
+}
+@screen lg {
+  #home .services .services__right {
+    margin-left: 30px;
+    margin-top: 0;
+  }
 }
 </style>

@@ -57,6 +57,7 @@ export default {
   font-size: 14px;
   line-height: 19px;
   padding-bottom: 23px;
+  text-align: justify;
 }
 .card__author__image {
   width: 56px;

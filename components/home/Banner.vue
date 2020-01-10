@@ -1,8 +1,8 @@
 <template>
   <section class="banner relative flex flex-col items-center justify-center">
     <div class="banner-bg absolute top-0 left-0 w-full h-full"></div>
-    <div class="banner-content relative z-20 flex justify-between">
-      <div class="banner-content__left">
+    <div class="banner-content relative z-20 flex justify-center">
+      <div class="banner-content__left text-center">
         <div class="banner-title text-white-primary">
           <span class="secondary-title font-normal font-nunito">
             Hello, I am
@@ -60,7 +60,7 @@ export default {
   font-size: 25px;
 }
 #home .banner .banner-title .primary-title {
-  font-size: 50px;
+  font-size: 35px;
 }
 #home .banner .banner-content {
   width: 100%;
@@ -71,5 +71,10 @@ export default {
   padding: 12px 24px;
   font-size: 18px;
   line-height: 24px;
+}
+@screen md {
+  #home .banner .banner-title .primary-title {
+    font-size: 50px;
+  }
 }
 </style>

@@ -67,13 +67,13 @@ export default {};
   border-bottom: 1px solid theme('colors.white.primary');
   margin-bottom: 48px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(1, minmax(320px, 1fr));
   column-gap: 20px;
   row-gap: 20px;
 }
 .footer__info__item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .footer__info__item .icon {
@@ -109,5 +109,15 @@ export default {};
 }
 .footer p svg {
   width: 20px;
+}
+@screen md {
+  .footer__info {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+@screen lg {
+  .footer__info__item {
+    justify-content: center;
+  }
 }
 </style>

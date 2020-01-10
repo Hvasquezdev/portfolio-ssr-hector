@@ -67,7 +67,7 @@ export default {
           name: 'Policia Municipal web app'
         }
       ],
-      columns: 3,
+      columns: 1,
       columsElements: [],
       addedElements: 0,
       isLoaded: false
@@ -79,9 +79,27 @@ export default {
     }
   },
   mounted() {
-    this.initMasonry(this.columns);
+    this.setColumns();
+
+    window.addEventListener('resize', this.setColumns, false);
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.setColumns, false);
   },
   methods: {
+    setColumns() {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < 768) {
+        this.columns = 1;
+      } else if (screenWidth >= 768 && screenWidth < 1360) {
+        this.columns = 2;
+      } else {
+        this.columns = 3;
+      }
+
+      this.initMasonry(this.columns);
+    },
     getImage(name) {
       return require(`~/assets/images/${name}`);
     },
@@ -92,6 +110,7 @@ export default {
       this.isLoaded = false;
       const masonry = this.$refs.masonry;
 
+      masonry.classList.remove('columns-1', 'columns-2', 'columns-3');
       masonry.classList.add(`columns-${columns}`);
       this.createColumElements();
     },

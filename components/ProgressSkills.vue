@@ -66,7 +66,17 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(100px, 170px));
   column-gap: 80px;
   row-gap: 80px;
-  max-width: 1070px;
+  max-width: 320px;
   justify-content: center;
+}
+@screen md {
+  .progress-skills {
+    max-width: 450px;
+  }
+}
+@screen lg {
+  .progress-skills {
+    max-width: 1070px;
+  }
 }
 </style>

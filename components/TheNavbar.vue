@@ -1,8 +1,8 @@
 <template>
   <div
-    class="navbar w-full ml-auto mr-auto flex items-center justify-between absolute top-0"
+    class="navbar w-full ml-auto mr-auto flex flex-col items-center justify-center md:flex-row md:justify-between absolute top-0"
   >
-    <div class="navbar-left">
+    <div class="navbar-left hidden md:block">
       <span
         class="navbar-brand font-poppins font-bold text-white-primary capitalize"
       >
@@ -47,6 +47,11 @@ export default {
   line-height: 27px;
 }
 .navbar .navbar-right ul li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 25px;
+}
+@screen md {
+  .navbar .navbar-right ul li:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 </style>

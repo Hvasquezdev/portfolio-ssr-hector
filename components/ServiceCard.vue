@@ -55,5 +55,6 @@ export default {
 .service-card__content__description {
   font-size: 14px;
   line-height: 23px;
+  text-align: justify;
 }
 </style>
