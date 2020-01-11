@@ -1,28 +1,29 @@
 <template>
   <div v-show="isLoaded" ref="masonry" class="masonry">
-    <div
-      v-for="(column, index) in columsElements"
-      :key="index"
-      class="masonry__column"
-    >
-      <template v-for="(item, itemIndex) in column.items">
-        <div :key="item.name + itemIndex" class="masonry__card relative">
-          <div class="masonry__card__overlay absolute w-full h-full"></div>
-          <client-only>
-            <img
-              v-lazy="getImage(item.image)"
-              :alt="item.name"
-              :data-src="getPlaceholderImage"
-            />
-          </client-only>
-        </div>
-      </template>
-    </div>
+    <template v-if="columsElements.length > 0">
+      <div
+        v-for="(column, index) in columsElements"
+        :key="index"
+        class="masonry__column"
+      >
+        <template v-for="(item, itemIndex) in column.items">
+          <project-card
+            :key="item.name + itemIndex"
+            :image-url="getImage(item.image)"
+            :alt="item.name"
+            :image-placeholder="getPlaceholderImage"
+          ></project-card>
+        </template>
+      </div>
+    </template>
   </div>
 </template>
 
 <script>
 export default {
+  components: {
+    ProjectCard: () => import('@/components/ProjectCard.vue')
+  },
   data() {
     return {
       items: [
@@ -126,10 +127,16 @@ export default {
       this.addColumnItems();
     },
     addColumnItems() {
-      for (let i = 0; i < this.itemsToRender; i++) {
-        for (let n = 0; n < this.columns; n++) {
-          if (this.addedElements < this.items.length) {
-            const itemToPush = this.items[i * this.columns + n];
+      const itemsToRender = this.itemsToRender;
+      const columns = this.columns;
+
+      for (let i = 0; i < itemsToRender; i++) {
+        for (let n = 0; n < columns; n++) {
+          const items = this.items;
+          const addedElements = this.addedElements;
+
+          if (addedElements < items.length) {
+            const itemToPush = items[i * columns + n];
             this.columsElements[n].items.push(itemToPush);
             this.addedElements++;
           }
@@ -158,33 +165,7 @@ export default {
 .masonry.columns-3 {
   --grid-columns: 3;
 }
-.masonry__card {
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
-}
-.masonry__card__overlay {
-  background: theme('colors.grey.primary');
-  background: -webkit-linear-gradient(
-    to bottom,
-    theme('colors.transparent'),
-    theme('colors.dark.secondary')
-  );
-  background: linear-gradient(
-    to bottom,
-    theme('colors.transparent'),
-    theme('colors.dark.secondary')
-  );
-  /* opacity: 0.30; */
-  opacity: 0;
-}
 .masonry__column .masonry__card:not(:last-child) {
   margin-bottom: 30px;
-}
-.masonry img {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 </style>

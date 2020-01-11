@@ -5,6 +5,7 @@
         <a
           href="https://github.com/Hvasquezdev"
           target="_blank"
+          aria-label="github link"
           rel="noreferrer"
           class="w-full h-full flex items-center justify-center shadow"
         >
@@ -17,6 +18,7 @@
         <a
           href="https://twitter.com/HecTorVasquez97"
           target="_blank"
+          aria-label="twitter link"
           rel="noreferrer"
           class="w-full h-full flex items-center justify-center shadow"
         >
@@ -29,6 +31,7 @@
         <a
           href="https://www.linkedin.com/in/hector-vasquez-dev/"
           target="_blank"
+          aria-label="linkedin link"
           rel="noreferrer"
           class="w-full h-full flex items-center justify-center shadow"
         >

@@ -1,4 +1,4 @@
-<template>
+<template funtional>
   <div
     class="navbar w-full ml-auto mr-auto flex flex-col items-center justify-center md:flex-row md:justify-between absolute top-0"
   >
