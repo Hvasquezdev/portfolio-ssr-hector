@@ -1,6 +1,6 @@
 <template>
   <div v-show="isLoaded" ref="masonry" class="masonry">
-    <template v-if="columsElements.length > 0">
+    <template v-if="columsElements.length > 0 && isLoaded">
       <div
         v-for="(column, index) in columsElements"
         :key="index"
@@ -11,7 +11,8 @@
             :key="item.name + itemIndex"
             :image-url="getImage(item.image)"
             :alt="item.name"
-            :image-placeholder="getPlaceholderImage"
+            :image-placeholder="getPlaceholderImage()"
+            :technologies="item.technologies"
           ></project-card>
         </template>
       </div>
@@ -29,43 +30,62 @@ export default {
       items: [
         {
           image: 'daniel-web-min.jpg',
-          name: 'Fiverr - Daniel website'
+          name: 'Fiverr - Daniel website',
+          technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
           image: 'daniel-landing-min.jpg',
-          name: 'Fiverr - Daniel landing page'
+          name: 'Fiverr - Daniel landing page',
+          technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
           image: 'fraction-min.jpg',
-          name: 'Fiverr - Fraction website'
+          name: 'Fiverr - Fraction website',
+          technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
           image: 'marketplace-min.jpg',
-          name: 'Fiverr - 15Rock Marketplace'
+          name: 'Fiverr - 15Rock Marketplace',
+          technologies: ['HTML5', 'CSS', 'JavaScript', 'React']
         },
         {
           image: '15rock-min.jpg',
-          name: 'Fiver - 15Rock Web App'
+          name: 'Fiver - 15Rock Web App',
+          technologies: ['HTML5', 'CSS: Flex - Grid', 'JavaScript']
         },
         {
           image: 'ideation-min.jpg',
-          name: 'Fiverr - Ideation web app'
+          name: 'Fiverr - Ideation web app',
+          technologies: ['HTML5', 'CSS', 'JavaScript', 'Vue.Js', 'Firebase']
         },
         {
           image: 'vueMusic-comp-min.jpg',
-          name: 'Platzi - Vue music project'
+          name: 'Platzi - Vue music project',
+          technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'Vue.Js']
         },
         {
           image: 'sparesbox-comp-min.jpg',
-          name: 'Fiverr - Sparexbox website'
+          name: 'Fiverr - Sparexbox website',
+          technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
           image: 'cart-comp-min.jpg',
-          name: 'FreeCodeCamp project'
+          name: 'FreeCodeCamp project',
+          technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'Vue.Js']
         },
         {
           image: 'policia-comp-min.jpg',
-          name: 'Policia Municipal web app'
+          name: 'Policia Municipal web app',
+          technologies: [
+            'HTML5',
+            'CSS',
+            'Bulma',
+            'JavaScript',
+            'Vue.Js',
+            'Node.Js',
+            'Express.js',
+            'MySQL'
+          ]
         }
       ],
       columns: 1,
