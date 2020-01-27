@@ -10,11 +10,11 @@
         My services
       </h2>
       <p class="font-nunito text-dark-secondary">
-        Hello, I'm Hector Vasquez a Front End developer, workin with JavaScript
-        and Vue.Js for almost 2 years. Writing code daily in personal projects
-        and profresional projects. Learning new things every day about web
-        development to improve my acknowledge. Writing code since I was 17 years
-        old.
+        Hello, I'm Hector Vasquez, I'm 22 years old and I'm a Front End
+        developer, working with JavaScript and Vue.Js for almost 2 years.
+        Writing code daily in personal projects and profresional projects.
+        Learning new things every day about web development to improve my
+        acknowledge. Writing code since I was 17 years old.
         <br />
         My work is entirely based around web development focused in Front End
         with modern JavaScript and Vue.Js.

@@ -51,10 +51,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/robots',
-    'nuxt-imagemin'
-  ],
+  modules: ['@nuxtjs/robots', 'nuxt-imagemin'],
   robots: {
     UserAgent: '*',
     Disallow: ''
