@@ -2,14 +2,14 @@
   <div class="progress-skills">
     <base-progress
       label="HTML5"
-      percent="84"
+      percent="83"
       gradient
       gradient-initial="#F5317F"
       gradient-end="#FF7C6E"
     ></base-progress>
     <base-progress
       label="CSS3: Flex - Grid"
-      percent="81"
+      percent="80"
       gradient
       gradient-initial="#1270E3"
       gradient-end="#59C2FF"
@@ -23,14 +23,14 @@
     ></base-progress>
     <base-progress
       label="JavaScript"
-      percent="83"
+      percent="81"
       gradient
       gradient-initial="#FF8359"
       gradient-end="#FFDF40"
     ></base-progress>
     <base-progress
       label="Node.Js"
-      percent="71"
+      percent="69"
       gradient
       gradient-initial="#23d160"
       gradient-end="#46EEAA"
