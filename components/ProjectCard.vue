@@ -1,7 +1,7 @@
 <template>
   <div class="masonry__card relative">
     <client-only>
-      <img v-lazy="imageUrl" :alt="alt" :data-src="imagePlaceholder" />
+      <img v-lazy="imgObj" :alt="alt" />
     </client-only>
     <div class="masonry__card__overlay w-full flex flex-col bg-yellow-primary">
       <strong class="font-poppins text-dark-primary mb-4">
@@ -40,6 +40,15 @@ export default {
       type: Array,
       default: () => []
     }
+  },
+  data() {
+    return {
+      imgObj: {
+        src: this.imageUrl,
+        error: require('~/assets/svg/error.svg'),
+        loading: require('~/assets/svg/spinner.svg')
+      }
+    };
   }
 };
 </script>

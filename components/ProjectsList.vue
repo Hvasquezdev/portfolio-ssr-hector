@@ -39,6 +39,21 @@ export default {
           technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
+          image: 'contraloria-intranet-min.png',
+          name: 'Contraloria Municipal - Intranet App',
+          technologies: [
+            'HTML5',
+            'CSS',
+            'Tailwind',
+            'JavaScript',
+            'Vue.Js',
+            'Node.Js',
+            'Express.js',
+            'Socket.io',
+            'MySQL'
+          ]
+        },
+        {
           image: 'fraction-min.jpg',
           name: 'Fiverr - Fraction website',
           technologies: ['HTML5', 'CSS', 'Bulma']
@@ -46,7 +61,7 @@ export default {
         {
           image: 'marketplace-min.jpg',
           name: 'Fiverr - 15Rock Marketplace',
-          technologies: ['HTML5', 'CSS', 'JavaScript', 'React']
+          technologies: ['HTML5', 'CSS', 'JavaScript', 'React.Js']
         },
         {
           image: '15rock-min.jpg',
@@ -86,6 +101,11 @@ export default {
             'Express.js',
             'MySQL'
           ]
+        },
+        {
+          image: 'hacker-news-clone.png',
+          name: 'Hacker news clone',
+          technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'React.Js']
         }
       ],
       columns: 1,
