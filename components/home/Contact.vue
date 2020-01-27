@@ -1,5 +1,9 @@
 <template>
-  <section id="contact" class="contact-info relative">
+  <section
+    id="contact"
+    v-lazy:background-image="require('~/assets/images/contact-bg-min.jpg')"
+    class="contact-info relative"
+  >
     <div class="overlay absolute"></div>
     <div
       class="contact-info__content relative z-10 text-center flex flex-col items-center justify-center"
@@ -26,7 +30,7 @@
 <style scoped>
 #home .contact-info {
   padding: 55px 30px;
-  background-image: url('~assets/images/contact-bg-min.jpg');
+  /* background-image: url('~assets/images/contact-bg-min.jpg'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
