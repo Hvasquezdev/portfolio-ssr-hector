@@ -6,10 +6,10 @@
       class="work-status__wrapper flex flex-col justify-center items-center ml-auto mr-auto w-full text-center lg:flex-row lg:justify-between"
     >
       <h3 class="font-nunito font-bold text-dark-primary">
-        I will be available for new contracts soon. Want to talk with me?
+        I am available to talk about new contracts
       </h3>
       <base-button v-scroll-to="'#contact'" animated color="yellow">
-        Contact Me
+        Hire Me
       </base-button>
     </div>
   </section>
