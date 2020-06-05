@@ -21,7 +21,7 @@
             r="70"
             stroke-width="10"
             :style="{
-              'stroke-dashoffset': `calc(440 - (440 * ${percent}) / 100)`,
+              'stroke-dashoffset': `${440 - (440 * percent) / 100}px`,
               stroke: `url(#${gradientId})`
             }"
           />
