@@ -142,10 +142,10 @@ export default {
       this.initMasonry(this.columns);
     },
     getImage(name) {
-      return require(`~/assets/images/${name}`);
+      return `/images/${name}`;
     },
     getPlaceholderImage() {
-      return require('~/assets/images/placeholder-image-min.jpg');
+      return '/images/placeholder-image-min.jpg';
     },
     initMasonry(columns) {
       this.isLoaded = false;

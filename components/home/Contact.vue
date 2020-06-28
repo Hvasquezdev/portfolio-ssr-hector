@@ -1,7 +1,7 @@
 <template>
   <section
     id="contact"
-    v-lazy:background-image="require('~/assets/images/contact-bg-min.jpg')"
+    v-lazy:background-image="'/images/contact-bg-min.jpg'"
     class="contact-info relative"
   >
     <div class="overlay absolute"></div>

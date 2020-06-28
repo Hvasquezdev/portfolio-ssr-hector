@@ -38,7 +38,7 @@ export default {
 <style scoped>
 #home .banner {
   padding: 160px 30px;
-  background-image: url('~assets/images/banner-bg-min.jpg');
+  background-image: url('/images/banner-bg-min.jpg');
   background-size: cover;
   background-position: center;
 }
