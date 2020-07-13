@@ -13,6 +13,7 @@
             :alt="item.name"
             :image-placeholder="getPlaceholderImage()"
             :technologies="item.technologies"
+            :link="item.link || ''"
           ></project-card>
         </template>
       </div>
@@ -71,7 +72,8 @@ export default {
         {
           image: 'ideation-min.jpg',
           name: 'Fiverr - Ideation web app',
-          technologies: ['HTML5', 'CSS', 'JavaScript', 'Vue.Js', 'Firebase']
+          technologies: ['HTML5', 'CSS', 'JavaScript', 'Vue.Js', 'Firebase'],
+          link: 'https://ideation-vue.netlify.app/'
         },
         {
           image: 'vueMusic-comp-min.jpg',
@@ -106,6 +108,18 @@ export default {
           image: 'hacker-news-clone.png',
           name: 'Hacker news clone',
           technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'React.Js']
+        },
+        {
+          image: 'trello-clone.png',
+          name: 'Trello clone',
+          technologies: ['HTML5', 'Tailwind.Css', 'JavaScript', 'Vue.Js'],
+          link: 'https://dnd-trello-clone.netlify.app/'
+        },
+        {
+          image: 'rock-paper-scissors.png',
+          name: 'Paper, Rock, Scrissors game',
+          technologies: ['HTML5', 'CSS', 'JavaScript'],
+          link: 'https://rock-paper-scissor-js.netlify.app/'
         }
       ],
       columns: 1,

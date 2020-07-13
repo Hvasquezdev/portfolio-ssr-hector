@@ -16,6 +16,16 @@
             #{{ tech }}
           </strong>
         </template>
+
+        <a
+          v-if="link"
+          :href="link"
+          target="_blank"
+          rel="noopener"
+          class="tags__tag font-nunito inline-block bg-green-primary rounded-full px-3 py-1 text-sm text-white-primary mr-2 mb-2"
+        >
+          #Link
+        </a>
       </div>
     </div>
   </div>
@@ -39,6 +49,10 @@ export default {
     technologies: {
       type: Array,
       default: () => []
+    },
+    link: {
+      type: String,
+      default: ''
     }
   },
   data() {
