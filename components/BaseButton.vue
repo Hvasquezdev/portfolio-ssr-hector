@@ -29,7 +29,7 @@ export default {
       return {
         'button--rounded': this.rounded,
         'button--animated': this.animated,
-        'button--yellow': this.color.toLowerCase() === 'yellow',
+        [`button--${this.color.toLowerCase()}`]: this.color,
         'button--bordered': this.bordered,
         'button--transparent': this.transparent
       };
@@ -44,6 +44,11 @@ export default {
   color: theme('colors.white.primary');
   border-radius: 4px;
   transition: all 0.3s;
+  outline: none;
+}
+.button:focus,
+.button:active {
+  outline: none;
 }
 .button--animated:hover {
   transform: scale(1.1);

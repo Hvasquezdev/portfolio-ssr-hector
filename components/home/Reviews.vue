@@ -19,7 +19,7 @@
           would definitely work with Hector again.
         </template>
       </base-card>
-      <base-card author-name="Charl2lie">
+      <base-card author-name="Charlie">
         <template>
           We had the chance to work with Hector on a web-app - and the
           communication was fluid, the product very much in line with our need -
@@ -27,11 +27,10 @@
           collaborator - and we recommend warmly his services.
         </template>
       </base-card>
-      <base-card author-name="Zipidy">
+      <base-card author-name="Magnusli">
         <template>
-          This seller is amazing. He wanted to assure that he can complete my
-          request before putting the order in. I am truly amazed and will be
-          ordering again.
+          Really solid and excellent developer, highly recommend. I will be sure
+          to hire him again!
         </template>
       </base-card>
     </div>

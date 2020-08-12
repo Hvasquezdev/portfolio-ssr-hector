@@ -31,17 +31,17 @@ export default {
       items: [
         {
           image: 'daniel-web-min.jpg',
-          name: 'Fiverr - Daniel website',
+          name: 'Daniel website',
           technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
           image: 'daniel-landing-min.jpg',
-          name: 'Fiverr - Daniel landing page',
+          name: 'Daniel landing page',
           technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
           image: 'contraloria-intranet-min.png',
-          name: 'Contraloria Municipal - Intranet App',
+          name: 'Contraloria Municipal - Realtime messages App',
           technologies: [
             'HTML5',
             'CSS',
@@ -56,33 +56,33 @@ export default {
         },
         {
           image: 'fraction-min.jpg',
-          name: 'Fiverr - Fraction website',
+          name: 'Fraction website',
           technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
           image: 'marketplace-min.jpg',
-          name: 'Fiverr - 15Rock Marketplace',
+          name: '15Rock Marketplace',
           technologies: ['HTML5', 'CSS', 'JavaScript', 'React.Js']
         },
         {
           image: '15rock-min.jpg',
-          name: 'Fiver - 15Rock Web App',
+          name: '15Rock Web App',
           technologies: ['HTML5', 'CSS: Flex - Grid', 'JavaScript']
         },
         {
           image: 'ideation-min.jpg',
-          name: 'Fiverr - Ideation web app',
+          name: 'Ideation web app',
           technologies: ['HTML5', 'CSS', 'JavaScript', 'Vue.Js', 'Firebase'],
           link: 'https://ideation-vue.netlify.app/'
         },
         {
           image: 'vueMusic-comp-min.jpg',
-          name: 'Platzi - Vue music project',
+          name: 'Vue music',
           technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'Vue.Js']
         },
         {
           image: 'sparesbox-comp-min.jpg',
-          name: 'Fiverr - Sparexbox website',
+          name: 'Sparexbox website',
           technologies: ['HTML5', 'CSS', 'Bulma']
         },
         {
@@ -92,7 +92,7 @@ export default {
         },
         {
           image: 'policia-comp-min.jpg',
-          name: 'Policia Municipal web app',
+          name: 'Policia Municipal transit taxes app',
           technologies: [
             'HTML5',
             'CSS',
@@ -120,6 +120,11 @@ export default {
           name: 'Paper, Rock, Scrissors game',
           technologies: ['HTML5', 'CSS', 'JavaScript'],
           link: 'https://rock-paper-scissor-js.netlify.app/'
+        },
+        {
+          image: 'micro-jobs.png',
+          name: 'Micro Jobs, Job portal',
+          technologies: ['HTML5', 'Tailwind.Css', 'Vue.Js', 'Nuxt.Js']
         }
       ],
       columns: 1,
