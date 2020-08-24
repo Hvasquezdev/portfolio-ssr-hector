@@ -43,6 +43,10 @@ export default {
         {
           image: 'js-profesional.png',
           name: 'Platzi - Javascript Profesional'
+        },
+        {
+          image: 'curso-c-plus-plus.png',
+          name: 'Platzi - Introducción a C++'
         }
       ],
       columns: 1,
