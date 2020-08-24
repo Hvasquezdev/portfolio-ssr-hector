@@ -78,7 +78,8 @@ export default {
         {
           image: 'vueMusic-comp-min.jpg',
           name: 'Vue music',
-          technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'Vue.Js']
+          technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'Vue.Js'],
+          link: 'https://github.com/Hvasquezdev/platzi-music'
         },
         {
           image: 'sparesbox-comp-min.jpg',
@@ -105,9 +106,10 @@ export default {
           ]
         },
         {
-          image: 'hacker-news-clone.png',
-          name: 'Hacker news clone',
-          technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'React.Js']
+          image: 'countries-filter.PNG',
+          name: 'FrontEnd Mentor - API Countries filter',
+          technologies: ['Vue.Js 3', 'Tailwind.Css'],
+          link: 'https://github.com/Hvasquezdev/countries-filter'
         },
         {
           image: 'trello-clone.png',
@@ -125,6 +127,12 @@ export default {
           image: 'micro-jobs.png',
           name: 'Micro Jobs, Job portal',
           technologies: ['HTML5', 'Tailwind.Css', 'Vue.Js', 'Nuxt.Js']
+        },
+        {
+          image: 'snake-game.PNG',
+          name: 'Snake game',
+          technologies: ['Vue.Js 3'],
+          link: 'https://github.com/Hvasquezdev/vue3-snake'
         }
       ],
       columns: 1,
