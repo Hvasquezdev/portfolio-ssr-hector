@@ -10,11 +10,12 @@
         My services
       </h2>
       <p class="font-nunito text-dark-secondary">
-        Hello, I'm Hector Vasquez, I'm 22 years old and I'm a Front End
-        developer, working with JavaScript and Vue.Js for almost 2 years.
-        Writing code daily in personal projects and profresional projects.
-        Learning new things every day about web development to improve my
-        acknowledge. Writing code since I was 17 years old.
+        I'm Hector Vasquez, passionate and innovative Front end developer with
+        about 2 years of experience maintaining, building and delivering
+        immersive and engaging user experience, mobile first, accessibility and
+        SEO optimization through Front end web development. Proactive developer
+        learning new things and improving current skills daily. Proeficent with
+        the most modern technologies like JavaScript ES6+ / Vue.Js / Nuxt.js
         <br />
         My work is entirely based around web development focused in Front End
         with modern JavaScript and Vue.Js.
@@ -23,7 +24,7 @@
         <br />
         Spanish - <strong>Native</strong>
         <br />
-        English - <strong>Learning</strong>
+        English [Intermediate] - <strong>Learning</strong>
       </p>
       <base-button v-scroll-to="'#contact'" animated color="yellow">
         Hire Me
@@ -52,7 +53,7 @@
           />
         </template>
         <template v-slot:title>
-          JavaScript - Vue.Js
+          JavaScript - Vue.Js - Nuxt.Js
         </template>
         <template v-slot:description>
           JavaScript the programing lenguaje of the web.
