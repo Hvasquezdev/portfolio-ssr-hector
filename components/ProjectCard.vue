@@ -77,7 +77,7 @@ export default {
   height: auto;
   padding: 20px 12px 12px 20px;
   box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
-  border-top: 1px solid theme('colors.yellow.primary');
+  border-top: 1px solid theme('colors.green.primary');
   border-radius: 4px;
 }
 .masonry__card img {
@@ -86,7 +86,7 @@ export default {
   height: 100%;
   object-fit: cover;
   box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 4px;
 }
 .masonry__card .tags {

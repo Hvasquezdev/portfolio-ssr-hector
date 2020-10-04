@@ -22,119 +22,15 @@
 </template>
 
 <script>
+import { projects } from '@/data/projects.js';
+
 export default {
   components: {
     ProjectCard: () => import('@/components/ProjectCard.vue')
   },
   data() {
     return {
-      items: [
-        {
-          image: 'daniel-web-min.jpg',
-          name: 'Daniel website',
-          technologies: ['HTML5', 'CSS', 'Bulma']
-        },
-        {
-          image: 'daniel-landing-min.jpg',
-          name: 'Daniel landing page',
-          technologies: ['HTML5', 'CSS', 'Bulma']
-        },
-        {
-          image: 'contraloria-intranet-min.png',
-          name: 'Contraloria Municipal - Realtime messages App',
-          technologies: [
-            'HTML5',
-            'CSS',
-            'Tailwind',
-            'JavaScript',
-            'Vue.Js',
-            'Node.Js',
-            'Express.js',
-            'Socket.io',
-            'MySQL'
-          ]
-        },
-        {
-          image: 'fraction-min.jpg',
-          name: 'Fraction website',
-          technologies: ['HTML5', 'CSS', 'Bulma']
-        },
-        {
-          image: 'marketplace-min.jpg',
-          name: '15Rock Marketplace',
-          technologies: ['HTML5', 'CSS', 'JavaScript', 'React.Js']
-        },
-        {
-          image: '15rock-min.jpg',
-          name: '15Rock Web App',
-          technologies: ['HTML5', 'CSS: Flex - Grid', 'JavaScript']
-        },
-        {
-          image: 'ideation-min.jpg',
-          name: 'Ideation web app',
-          technologies: ['HTML5', 'CSS', 'JavaScript', 'Vue.Js', 'Firebase'],
-          link: 'https://ideation-vue.netlify.app/'
-        },
-        {
-          image: 'vueMusic-comp-min.jpg',
-          name: 'Vue music',
-          technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'Vue.Js'],
-          link: 'https://github.com/Hvasquezdev/platzi-music'
-        },
-        {
-          image: 'sparesbox-comp-min.jpg',
-          name: 'Sparexbox website',
-          technologies: ['HTML5', 'CSS', 'Bulma']
-        },
-        {
-          image: 'cart-comp-min.jpg',
-          name: 'FreeCodeCamp project',
-          technologies: ['HTML5', 'CSS', 'Bulma', 'JavaScript', 'Vue.Js']
-        },
-        {
-          image: 'policia-comp-min.jpg',
-          name: 'Policia Municipal transit taxes app',
-          technologies: [
-            'HTML5',
-            'CSS',
-            'Bulma',
-            'JavaScript',
-            'Vue.Js',
-            'Node.Js',
-            'Express.js',
-            'MySQL'
-          ]
-        },
-        {
-          image: 'countries-filter.PNG',
-          name: 'FrontEnd Mentor - API Countries filter',
-          technologies: ['Vue.Js 3', 'Tailwind.Css'],
-          link: 'https://github.com/Hvasquezdev/countries-filter'
-        },
-        {
-          image: 'trello-clone.png',
-          name: 'Trello clone',
-          technologies: ['HTML5', 'Tailwind.Css', 'JavaScript', 'Vue.Js'],
-          link: 'https://dnd-trello-clone.netlify.app/'
-        },
-        {
-          image: 'rock-paper-scissors.png',
-          name: 'Paper, Rock, Scrissors game',
-          technologies: ['HTML5', 'CSS', 'JavaScript'],
-          link: 'https://rock-paper-scissor-js.netlify.app/'
-        },
-        {
-          image: 'micro-jobs.png',
-          name: 'Micro Jobs, Job portal',
-          technologies: ['HTML5', 'Tailwind.Css', 'Vue.Js', 'Nuxt.Js']
-        },
-        {
-          image: 'snake-game.PNG',
-          name: 'Snake game',
-          technologies: ['Vue.Js 3'],
-          link: 'https://github.com/Hvasquezdev/vue3-snake'
-        }
-      ],
+      items: projects,
       columns: 1,
       columsElements: [],
       addedElements: 0,
