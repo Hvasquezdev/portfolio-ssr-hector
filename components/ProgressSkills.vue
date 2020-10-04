@@ -23,31 +23,38 @@ export default {
       skills: [
         {
           label: 'HTML5',
-          percent: '83',
+          percent: '90',
           gradient: true,
           gradientInitial: '#F5317F',
           gradientEnd: '#FF7C6E'
         },
         {
           label: 'CSS3: Flex - Grid',
-          percent: '80',
+          percent: '87',
           gradient: true,
           gradientInitial: '#1270E3',
           gradientEnd: '#59C2FF'
         },
         {
           label: 'Tailwind Css',
-          percent: '78',
+          percent: '82',
           gradient: true,
           gradientInitial: '#00d1b2',
           gradientEnd: '#00d1b2'
         },
         {
           label: 'JavaScript',
-          percent: '86',
+          percent: '89',
           gradient: true,
           gradientInitial: '#FF8359',
           gradientEnd: '#FFDF40'
+        },
+        {
+          label: 'Vuetify',
+          percent: '80',
+          gradient: true,
+          gradientInitial: '#7cb8f7',
+          gradientEnd: '#2a8bf2'
         },
         {
           label: 'Node.Js',
@@ -58,14 +65,14 @@ export default {
         },
         {
           label: 'Vue.Js',
-          percent: '83',
+          percent: '88',
           gradient: true,
           gradientInitial: '#4fc08d',
           gradientEnd: '#35495e'
         },
         {
           label: 'Nuxt.Js',
-          percent: '80',
+          percent: '84',
           gradient: true,
           gradientInitial: '#35495e',
           gradientEnd: '#4fc08d'

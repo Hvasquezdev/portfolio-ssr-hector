@@ -17,8 +17,8 @@
             <strong class="text-yellow-primary">Vue.Js</strong>
           </h2>
         </div>
-        <base-button v-scroll-to="'#contact'" animated color="yellow">
-          Contact Me
+        <base-button animated color="yellow" @click="openCV">
+          Download CV
         </base-button>
       </div>
     </div>
@@ -31,6 +31,12 @@
 export default {
   components: {
     SocialButtons: () => import('@/components/SocialButtons.vue')
+  },
+
+  methods: {
+    openCV() {
+      window.open('/documents/cv-hector.pdf');
+    }
   }
 };
 </script>

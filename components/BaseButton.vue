@@ -2,6 +2,8 @@
   <button
     class="button font-nunito py-2 px-4 shadow active:shadow-none"
     :class="className"
+    v-bind="$attrs"
+    v-on="$listeners"
   >
     <slot></slot>
   </button>
