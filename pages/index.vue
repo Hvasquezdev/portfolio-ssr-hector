@@ -25,9 +25,9 @@
 
 <script>
 const url = 'https://www.hectorvasquez.me/';
-const title = 'Hector Vasquez | Portfolio';
+const title = 'Hector Vasquez | Front-End Developer';
 const description =
-  'Hello, I am Hector Vasquez a Front End developer, workin with JavaScript and VueJs for almost 2 years. Writing code daily in personal and profresional projects';
+  'Hello, I am Hector Vasquez a Front End developer, workin with Vue.Js, React.Js and some other cool technologies...';
 
 export default {
   name: 'Home',
@@ -38,8 +38,7 @@ export default {
         {
           hid: 'home-description',
           name: 'description',
-          content:
-            'Hello, I am Hector Vasquez a Front End developer, workin with JavaScript and VueJs for almost 2 years. Writing code daily in personal and profresional projects'
+          content: description
         },
         { hid: 'og:url', property: 'og:url', content: url },
         { hid: 'og:type', property: 'og:type', content: 'website' },
