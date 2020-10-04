@@ -14,6 +14,9 @@
         <li v-scroll-to="'#services'" class="cursor-pointer text-white-primary">
           Services
         </li>
+        <li v-scroll-to="'#contact'" class="cursor-pointer text-white-primary">
+          Contact
+        </li>
         <li v-scroll-to="'#skills'" class="cursor-pointer text-white-primary">
           Skills
         </li>
