@@ -30,7 +30,11 @@ module.exports = {
       dark: {
         primary: '#4A4A4A',
         secondary: '#6E6E6E',
-        tertiary: '#5D5D5D'
+        tertiary: '#5D5D5D',
+        transparent: {
+          primary: '#4a4a4ab3',
+          secondary: '#6e6e6e6e'
+        }
       },
       blue: {
         primary: '#5165FF',

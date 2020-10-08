@@ -24,13 +24,16 @@
     </div>
 
     <social-buttons />
+
+    <wave-shape class="banner-shape" />
   </section>
 </template>
 
 <script>
 export default {
   components: {
-    SocialButtons: () => import('@/components/SocialButtons.vue')
+    SocialButtons: () => import('@/components/SocialButtons.vue'),
+    WaveShape: () => import('@/components/WaveShape.vue')
   },
 
   methods: {
@@ -47,20 +50,21 @@ export default {
   background-image: url('/images/banner-bg-min.jpg');
   background-size: cover;
   background-position: center;
+  margin-bottom: 30px;
 }
 #home .banner .banner-bg {
   background: theme('colors.grey.primary');
   background: -webkit-linear-gradient(
     to top,
-    theme('colors.dark.primary'),
-    theme('colors.dark.secondary')
+    theme('colors.dark.transparent.primary'),
+    theme('colors.dark.transparent.secondary')
   );
   background: linear-gradient(
     to top,
-    theme('colors.dark.primary'),
-    theme('colors.dark.secondary')
+    theme('colors.dark.transparent.primary'),
+    theme('colors.dark.transparent.secondary')
   );
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 #home .banner .banner-title .secondary-title {
   font-size: 25px;
@@ -78,9 +82,36 @@ export default {
   font-size: 18px;
   line-height: 24px;
 }
+#home .banner .banner-shape {
+  /* height: 130px; */
+  /* bottom: -130px; */
+  height: 90px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -79px;
+  fill: #414141;
+  width: 100%;
+}
 @screen md {
+  #home .banner {
+    margin-bottom: 90px;
+  }
   #home .banner .banner-title .primary-title {
     font-size: 50px;
+  }
+  #home .banner .banner-shape {
+    height: 130px;
+    bottom: -128px;
+  }
+}
+@screen xl {
+  #home .banner {
+    margin-bottom: 170px;
+  }
+  #home .banner .banner-shape {
+    height: 200px;
+    bottom: -198px;
   }
 }
 </style>
