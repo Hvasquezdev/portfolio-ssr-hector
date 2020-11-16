@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import { launchConfetti } from '@/plugins/confetti';
 import TheNavbar from '@/components/TheNavbar.vue';
 import TheFooter from '@/components/TheFooter.vue';
 
@@ -14,6 +15,10 @@ export default {
   components: {
     TheNavbar,
     TheFooter
+  },
+
+  mounted() {
+    launchConfetti();
   }
 };
 </script>
