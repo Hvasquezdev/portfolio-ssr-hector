@@ -60,7 +60,8 @@ export default {
           hid: 'twitter:description',
           name: 'twitter:description',
           content: description
-        }
+        },
+        { name: 'robots', content: 'index,follow' },
       ]
     };
   },
