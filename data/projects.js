@@ -17,6 +17,12 @@ export const projects = [
     link: 'https://v3-pokedex.netlify.app/'
   },
   {
+    image: 'prendea-web.png',
+    name: 'Prendea',
+    technologies: ['HTML5', 'CSS', 'JavaScript', 'Vue.Js'],
+    link: 'https://prendea.com/'
+  },
+  {
     image: 'daniel-landing-min.jpg',
     name: 'Daniel landing page',
     technologies: ['HTML5', 'CSS', 'Bulma']

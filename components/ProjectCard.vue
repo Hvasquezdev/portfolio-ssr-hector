@@ -4,10 +4,10 @@
       <img v-lazy="imgObj" :alt="alt" />
     </client-only>
     <div class="masonry__card__overlay w-full flex flex-col bg-yellow-primary">
-      <strong class="font-poppins text-dark-primary mb-4">
+      <strong v-if="alt" class="font-poppins text-white-primary">
         {{ alt }}
       </strong>
-      <div class="tags w-full flex">
+      <div v-if="technologies.length" class="tags w-full flex mt-4">
         <template v-for="(tech, index) in technologies">
           <strong
             :key="index"
@@ -69,25 +69,22 @@ export default {
 
 <style scoped>
 .masonry__card {
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
 }
 .masonry__card__overlay {
-  background: theme('colors.white.primary');
+  background: theme('colors.dark.primary');
   bottom: 0;
   height: auto;
-  padding: 20px 12px 12px 20px;
-  box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
-  border-top: 1px solid theme('colors.green.primary');
-  border-radius: 4px;
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
 }
 .masonry__card img {
   width: 100%;
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
-  margin-bottom: 10px;
-  border-radius: 4px;
+  border-radius: 8px 8px 0 0;
 }
 .masonry__card .tags {
   flex-wrap: wrap;

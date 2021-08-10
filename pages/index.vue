@@ -61,7 +61,7 @@ export default {
           name: 'twitter:description',
           content: description
         },
-        { name: 'robots', content: 'index,follow' },
+        { name: 'robots', content: 'index,follow' }
       ]
     };
   },
