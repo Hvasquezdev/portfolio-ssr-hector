@@ -4,21 +4,48 @@
     class="services ml-auto mr-auto flex flex-col justify-center items-center lg:flex-row lg:justify-between"
   >
     <div
-      class="my-services text-center flex flex-col items-center justify-center lg:text-justify lg:items-start"
+      class="my-services text-center flex flex-col items-center justify-center lg:text-left lg:items-start"
     >
       <h2 class="capitalize font-bold font-poppins text-dark-primary">
-        My services
+        About Me
       </h2>
+
+      <img
+        class="is-mobile"
+        src="/images/profile-image.jpg"
+        alt="Hector Vasquez"
+        load="lazy"
+      />
+
       <p class="font-nunito text-dark-secondary">
-        I'm Hector Vasquez, passionate and innovative Front end developer with
-        about 2 years of experience maintaining, building and delivering
-        immersive and engaging user experience, mobile first, accessibility and
-        SEO optimization through Front end web development. Proactive developer
-        learning new things and improving current skills daily. Proeficent with
-        the most modern technologies like JavaScript ES6+ / Vue.Js / Nuxt.js
-        <br />
-        My work is entirely based around web development focused in Front End
-        with modern JavaScript and Vue.Js.
+        I'm Hector Vasquez, and this is a short history of how I start and what
+        I do actually.
+        <br /><br />
+        All start when I was 15 years old, I was a video games lover and then
+        some day I was thinking "How are this things made?" I started to search
+        about it and then I reach a video tutorial of C++ the first time was a
+        bit scary to see all those strange words 😅 but with the time I started
+        to see that I liked to do this, since then I can't get enough. I learned
+        a few things about gameplay programming and then started in Front-end
+        development, I love both of those worlds and right now I could say that
+        Front-end is what I love to do.
+        <br /><br />
+        I love all the things related to Front-end, like make those websites
+        responsive and then watch those websites in my phone or desktop screen
+        and see that they works and looks amazing, is very satisfying to me.
+        <br /><br />
+        I started in the professional world as a freelancer by collaborating
+        with some people and companies, then I started to work for some startups
+        as a Front-end developer, some times as the only Front-end developer and
+        also some times as a member of small teams with great people, currently
+        working for a startup and participation as a Front-end developer in
+        <strong>𝐘-𝐜𝐨𝐦𝐛𝐢𝐧𝐚𝐭𝐨𝐫</strong>. <br /><br />
+        My strong points and skills are based on Front-end development with
+        modern JavaScript and it also includes responsive design and mobile
+        first, design patterns, problem solving, web optimization like SEO,
+        performance and accessibility, a few things about 3D web with Three.js
+        (Still learning and playing a lot with it) and also I consider myself a
+        quick learner and I love to learn new things related to this tech work.
         <br /><br />
         <strong class="uppercase">Lenguajes that I speak:</strong>
         <br />
@@ -26,53 +53,16 @@
         <br />
         English [Intermediate] - <strong>Learning</strong>
       </p>
+
       <base-button v-scroll-to="'#contact'" animated color="yellow">
         Hire Me
       </base-button>
     </div>
     <div class="services__right">
-      <service-card>
-        <template v-slot:media>
-          <img src="~/assets/svg/web-gradient.svg" alt="Web HTML5 and Css3" />
-        </template>
-        <template v-slot:title>
-          HTML5 &amp; Css3
-        </template>
-        <template v-slot:description>
-          HTML5 and Css with Flexbox and Grid are the first skills that I learn
-          in this world of web development, creating mobile-first web interfaces
-          since 2 years ago
-        </template>
-      </service-card>
-
-      <service-card>
-        <template v-slot:media>
-          <img
-            src="~/assets/svg/screen-gradient.svg"
-            alt="JavaScript - Vue.Js - Front-End"
-          />
-        </template>
-        <template v-slot:title>
-          JavaScript - Vue.Js - Nuxt.Js
-        </template>
-        <template v-slot:description>
-          JavaScript the programing lenguaje of the web.
-          <br />
-          I started with JavaScript creating my firsts dynamic pages from
-          scratch, I'm now working with Vue.Js to create the best web apps.
-        </template>
-      </service-card>
+      <img src="/images/profile-image.jpg" alt="Hector Vasquez" load="lazy" />
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  components: {
-    ServiceCard: () => import('@/components/ServiceCard.vue')
-  }
-};
-</script>
 
 <style scoped>
 #home .services {
@@ -84,6 +74,11 @@ export default {
 }
 #home .services .my-services h2 {
   font-size: 30px;
+}
+#home .services .my-services img {
+  width: 190px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 #home .services .my-services p {
   font-size: 14px;
@@ -100,16 +95,25 @@ export default {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
-}
-#home .services .services__right .service-card:not(:last-child) {
-  margin-bottom: 30px;
+  display: none;
 }
 @screen md {
-  #home .services .services__right .service-card:first-child {
-    margin-right: 120px;
+  #home .services {
+    align-items: flex-start;
   }
-  #home .services .services__right .service-card:last-child {
-    align-self: flex-end;
+  #home .services .my-services {
+    max-width: 600px;
+  }
+  #home .services .my-services img {
+    display: none;
+  }
+  #home .services .services__right {
+    display: block;
+    margin-left: 130px;
+    max-width: 360px;
+  }
+  #home .services .services__right img {
+    border-radius: 8px;
   }
 }
 @screen lg {
