@@ -23,77 +23,77 @@ export default {
       skills: [
         {
           label: 'HTML5',
-          percent: '90',
+          percent: '100',
           gradient: true,
           gradientInitial: '#F5317F',
           gradientEnd: '#FF7C6E'
         },
         {
-          label: 'CSS3: Flex - Grid',
-          percent: '87',
+          label: 'CSS3',
+          percent: '100',
           gradient: true,
           gradientInitial: '#1270E3',
           gradientEnd: '#59C2FF'
         },
         {
           label: 'Tailwind Css',
-          percent: '82',
+          percent: '100',
           gradient: true,
           gradientInitial: '#00d1b2',
           gradientEnd: '#00d1b2'
         },
         {
           label: 'JavaScript',
-          percent: '89',
+          percent: '100',
           gradient: true,
           gradientInitial: '#FF8359',
           gradientEnd: '#FFDF40'
         },
         {
           label: 'Vuetify',
-          percent: '80',
+          percent: '100',
           gradient: true,
           gradientInitial: '#7cb8f7',
           gradientEnd: '#2a8bf2'
         },
         {
           label: 'Node.Js',
-          percent: '70',
+          percent: '100',
           gradient: true,
           gradientInitial: '#23d160',
           gradientEnd: '#46EEAA'
         },
         {
           label: 'Vue.Js',
-          percent: '88',
+          percent: '100',
           gradient: true,
           gradientInitial: '#4fc08d',
           gradientEnd: '#35495e'
         },
         {
           label: 'Nuxt.Js',
-          percent: '84',
+          percent: '100',
           gradient: true,
           gradientInitial: '#35495e',
           gradientEnd: '#4fc08d'
         },
         {
-          label: 'React.Js',
-          percent: '73',
+          label: 'Vuex',
+          percent: '100',
           gradient: true,
-          gradientInitial: '#1486c4',
+          gradientInitial: '#4fc08d',
           gradientEnd: '#4db7f1'
         },
         {
           label: 'Three.Js',
-          percent: '70',
+          percent: '100',
           gradient: true,
           gradientInitial: '#433f81',
           gradientEnd: '#140f2e'
         },
         {
           label: 'Git - Github',
-          percent: '81',
+          percent: '100',
           gradient: true,
           gradientInitial: '#f56e56',
           gradientEnd: '#f14e32'

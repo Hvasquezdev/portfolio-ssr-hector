@@ -4,9 +4,9 @@
       My Skills
     </h2>
     <p class="font-nunito text-center text-dark-secondary">
-      As a Front End developer I learned and still learning the best
-      technologies to made the best and full responsive (mobile first) and with
-      a great performant Web Apps
+      My skills as a JavaScript developer that I did learn this past years and
+      improving every day by reading and practicing my current skills and new
+      ones
     </p>
 
     <progress-skills />

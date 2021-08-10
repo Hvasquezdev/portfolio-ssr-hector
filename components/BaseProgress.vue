@@ -31,14 +31,9 @@
         class="progress__ring__number absolute flex justify-center items-center"
       >
         <h3 class="font-poppins font-bold text-dark-tertiary">
-          {{ percent }}<span>%</span>
+          {{ label }}
         </h3>
       </div>
-    </div>
-    <div class="progress__label">
-      <h3 class="font-poppins font-medium text-dark-primary">
-        {{ label }}
-      </h3>
     </div>
   </div>
 </template>
@@ -112,7 +107,7 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  font-size: 34px;
+  font-size: 16px;
 }
 .progress__label {
   font-size: 16px;
