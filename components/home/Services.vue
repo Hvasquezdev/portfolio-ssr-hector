@@ -18,40 +18,36 @@
       />
 
       <p class="font-nunito text-dark-secondary">
-        I'm Hector Vasquez, and this is a short history of how I start and what
-        I do actually.
+        I'm Hector Vasquez, and this is a short history of how I ended up loving
+        to code.
         <br /><br />
-        All start when I was 15 years old, I was a video games lover and then
-        some day I was thinking "How are this things made?" I started to search
-        about it and then I reach a video tutorial of C++ the first time was a
-        bit scary to see all those strange words 😅 but with the time I started
-        to see that I liked to do this, since then I can't get enough. I learned
-        a few things about gameplay programming and then started in Front-end
-        development, I love both of those worlds and right now I could say that
-        Front-end is what I love to do.
+        It all started when I was 15 years old. I was a video games lover and
+        then some day I was thinking “How are these things made?“. I started to
+        search for an answer and that's when I arrived at a video tutorial of
+        C++. The first time was a bit scary to see all those strange words 😅
+        but with time I started to see that I liked to do this. Since then I
+        can't get enough. I learned a few things about gameplay programming and
+        then started in Front-end development, I love both of those worlds and
+        right now I could say that Front-end is what I love to do the most.
         <br /><br />
-        I love all the things related to Front-end, like make those websites
-        responsive and then watch those websites in my phone or desktop screen
-        and see that they works and looks amazing, is very satisfying to me.
+        I love all the things related to Front-end, making websites responsive
+        and then watch those websites in my phone or desktop screen and see how
+        they work and look is amazing.
         <br /><br />
         I started in the professional world as a freelancer by collaborating
-        with some people and companies, then I started to work for some startups
+        with some people and companies. Then I started to work for some startups
         as a Front-end developer, some times as the only Front-end developer and
-        also some times as a member of small teams with great people, currently
-        working for a startup and participation as a Front-end developer in
-        <strong>𝐘-𝐜𝐨𝐦𝐛𝐢𝐧𝐚𝐭𝐨𝐫</strong>. <br /><br />
-        My strong points and skills are based on Front-end development with
-        modern JavaScript and it also includes responsive design and mobile
-        first, design patterns, problem solving, web optimization like SEO,
-        performance and accessibility, a few things about 3D web with Three.js
-        (Still learning and playing a lot with it) and also I consider myself a
-        quick learner and I love to learn new things related to this tech work.
+        some times as a member of small teams with great people. I am currently
+        working for a <strong>YC start-up</strong> as a front-end developer.
         <br /><br />
-        <strong class="uppercase">Lenguajes that I speak:</strong>
-        <br />
-        Spanish - <strong>Native</strong>
-        <br />
-        English [Intermediate] - <strong>Learning</strong>
+        My technical strengths are based on front-end development with modern
+        JavaScript. They include responsive design and mobile first, design
+        patterns, problem solving, web optimization like SEO, performance and
+        accessibility. I consider myself a quick learner and love playing around
+        3D web with Three.js, still learning and playing a lot with it.
+        <br /><br />
+        I speak <strong>Spanish</strong> as a native language and
+        <strong>English</strong> at an intermediate level.
       </p>
 
       <base-button v-scroll-to="'#contact'" animated color="yellow">

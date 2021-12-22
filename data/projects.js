@@ -25,7 +25,13 @@ export const projects = [
   {
     image: 'daniel-landing-min.jpg',
     name: 'Daniel landing page',
-    technologies: ['HTML5', 'CSS', 'Bulma']
+    technologies: ['HTML5', 'CSS', 'Bulma'],
+    link: 'https://game-country-quiz.netlify.app/'
+  },
+  {
+    image: 'country-quiz.jpg',
+    name: 'Country Quiz App',
+    technologies: ['Vue 3', 'Vite', 'TypeScript', 'Sass', 'Vuex']
   },
   {
     image: 'fraction-min.jpg',
