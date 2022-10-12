@@ -12,7 +12,7 @@
 
       <img
         class="is-mobile"
-        src="/images/profile-image.jpg"
+        src="/images/profile-image.jpeg"
         alt="Hector Vasquez"
         load="lazy"
       />
@@ -55,7 +55,7 @@
       </base-button>
     </div>
     <div class="services__right">
-      <img src="/images/profile-image.jpg" alt="Hector Vasquez" load="lazy" />
+      <img src="/images/profile-image.jpeg" alt="Hector Vasquez" load="lazy" />
     </div>
   </section>
 </template>
