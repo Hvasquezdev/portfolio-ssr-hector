@@ -11,10 +11,12 @@
             Hector Vasquez
           </h1>
           <h2 class="secondary-title">
-            Frontend Developer with
-            <strong class="text-yellow-primary">JavaScript</strong>
-            and
-            <strong class="text-yellow-primary">Vue.Js</strong>
+            Software Developer |
+            <strong class="text-yellow-primary">Front-end</strong>
+            with modern
+            <strong class="text-yellow-primary">
+              JavaScript
+            </strong>
           </h2>
         </div>
         <base-button animated color="yellow" @click="openCV">
