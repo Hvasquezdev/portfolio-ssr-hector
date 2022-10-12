@@ -21,7 +21,7 @@
         Send me an email
       </p>
       <div class="contact__email">
-        Hvasquezdev@gmail.com
+        hvasquezdev@gmail.com
       </div>
     </div>
   </section>
