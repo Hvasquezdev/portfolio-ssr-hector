@@ -43,6 +43,13 @@ export default {
           gradientEnd: '#00d1b2'
         },
         {
+          label: 'TypeScript',
+          percent: '100',
+          gradient: true,
+          gradientInitial: '#3178c6',
+          gradientEnd: '#7299c3'
+        },
+        {
           label: 'JavaScript',
           percent: '100',
           gradient: true,
@@ -62,6 +69,13 @@ export default {
           gradient: true,
           gradientInitial: '#23d160',
           gradientEnd: '#46EEAA'
+        },
+        {
+          label: 'React.Js',
+          percent: '100',
+          gradient: true,
+          gradientInitial: '#61dafb',
+          gradientEnd: '#34cef8'
         },
         {
           label: 'Vue.Js',
