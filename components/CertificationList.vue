@@ -6,15 +6,14 @@
         :key="index"
         class="masonry__column"
       >
-        <template v-for="(item, itemIndex) in column.items">
-          <project-card
-            :key="item.name + itemIndex"
-            :image-url="getImage(item.image)"
-            :alt="item.name"
-            :image-placeholder="getPlaceholderImage()"
-            :link="item.link || ''"
-          ></project-card>
-        </template>
+        <project-card
+          v-for="(item, itemIndex) in column.items"
+          :key="item.name + itemIndex"
+          :image-url="getImage(item.image)"
+          :alt="item.name"
+          :image-placeholder="getPlaceholderImage()"
+          :link="item.link || ''"
+        ></project-card>
       </div>
     </template>
   </div>
@@ -35,6 +34,18 @@ export default {
         {
           image: 'carrera-vue.png',
           name: 'Platzi - Desarrollo con Vue.Js'
+        },
+        {
+          image: 'react-basic.png',
+          name: 'Platzi - Introducción a React.js'
+        },
+        {
+          image: 'react-state-management.png',
+          name: 'Platzi - React.js: Manejo Profesional del Estado'
+        },
+        {
+          image: 'react-render-composition.png',
+          name: 'Platzi - React.js: Patrones de Render y Composición'
         },
         {
           image: 'carrera-js.png',
