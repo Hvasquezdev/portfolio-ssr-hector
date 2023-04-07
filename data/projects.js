@@ -1,8 +1,9 @@
 export const projects = [
   {
-    image: 'daniel-web-min.jpg',
-    name: 'Daniel website',
-    technologies: ['HTML5', 'CSS', 'Bulma']
+    image: 'iphone_memory_game.png',
+    name: 'Memory Game',
+    technologies: ['React Native', 'Expo', 'React.Js'],
+    link: 'https://github.com/Hvasquezdev/react-native-memory'
   },
   {
     image: 'pokedex-vue.png',
@@ -15,6 +16,17 @@ export const projects = [
       'Svg animation'
     ],
     link: 'https://v3-pokedex.netlify.app/'
+  },
+  {
+    image: 'iphone_jobs_app.png',
+    name: 'Jobs Board',
+    technologies: ['React Native', 'Expo', 'React.Js'],
+    link: 'https://github.com/Hvasquezdev/react-native-jobs'
+  },
+  {
+    image: 'daniel-web-min.jpg',
+    name: 'Daniel website',
+    technologies: ['HTML5', 'CSS', 'Bulma']
   },
   {
     image: 'prendea-web.png',
