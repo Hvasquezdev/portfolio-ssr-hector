@@ -99,6 +99,13 @@ export default {
           gradientEnd: '#4db7f1'
         },
         {
+          label: 'React Native',
+          percent: '100',
+          gradient: true,
+          gradientInitial: '#eb6618',
+          gradientEnd: '#e59d73'
+        },
+        {
           label: 'Three.Js',
           percent: '100',
           gradient: true,
