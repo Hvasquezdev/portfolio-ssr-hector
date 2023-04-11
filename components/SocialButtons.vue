@@ -16,19 +16,6 @@
       </li>
       <li class="flex">
         <a
-          href="https://twitter.com/HecTorVasquez97"
-          target="_blank"
-          aria-label="twitter link"
-          rel="noreferrer"
-          class="w-full h-full flex items-center justify-center shadow"
-        >
-          <client-only>
-            <font-awesome-icon :icon="['fab', 'twitter']" />
-          </client-only>
-        </a>
-      </li>
-      <li class="flex">
-        <a
           href="https://www.linkedin.com/in/hector-vasquez-dev/"
           target="_blank"
           aria-label="linkedin link"
