@@ -10,7 +10,9 @@
       Reviews of some of the projects in which I have collaborated these last 2
       years as a Freelance Front End Developer
     </p>
-    <div class="reviews__cards w-full ml-auto mr-auto justify-center">
+    <div
+      class="reviews__cards w-full ml-auto mr-auto justify-center items-start"
+    >
       <base-card author-name="Gautambakshi">
         <template>
           We enjoyed working with Hector. He was hard working and quick to
@@ -27,10 +29,19 @@
           collaborator - and we recommend warmly his services.
         </template>
       </base-card>
-      <base-card author-name="Magnusli">
+      <base-card
+        author-name="Isael Bautista Martin"
+        image-name="isael_profile.jpeg"
+      >
         <template>
-          Really solid and excellent developer, highly recommend. I will be sure
-          to hire him again!
+          Excellent developer, it was a great pleasure to have worked with
+          Hector, responsible, hardworking, he proposes excellent solutions,
+          fast and with good quality in his work, he is a kind person, open to
+          listen and help his colleagues.
+          <br />
+          <br />
+          It will be the best decision they will make when integrating him into
+          their work team.
         </template>
       </base-card>
     </div>

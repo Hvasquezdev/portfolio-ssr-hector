@@ -1,6 +1,6 @@
 <template>
-  <div class="card bg-white-primary">
-    <p class="card__review font-nunito text-dark-secondary">
+  <div class="card bg-dark-primary">
+    <p class="card__review font-nunito text-white-primary">
       <slot></slot>
     </p>
     <div class="card__author flex items-center">
@@ -9,13 +9,13 @@
         v-lazy="getImage(imageName)"
         :alt="authorName"
         :data-src="getPlaceholderImage"
-        class="card__author__image"
+        class="card__author__image has-image"
       />
       <div v-else class="card__author__image">
         {{ authorName[0] }}
       </div>
       <div class="card__author__info">
-        <h4 class="font-poppins font-medium text-dark-primary capitalize">
+        <h4 class="font-poppins font-medium text-white-primary capitalize">
           {{ authorName || '--' }}
         </h4>
       </div>
@@ -51,7 +51,7 @@ export default {
   padding: 31px 31px 35px 31px;
   box-shadow: 0 0 30px rgba(172, 172, 172, 0.16);
   max-width: 450px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .card__review {
   font-size: 14px;
@@ -69,8 +69,15 @@ export default {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  background-color: theme('colors.yellow.primary');
-  color: theme('colors.white.primary');
+  background-color: theme('colors.white.primary');
+  color: theme('colors.dark.primary');
   font-family: theme('fontFamily.nunito');
+  border: 1px solid theme('colors.white.primary');
+  border-radius: 100%;
+  padding: 2px;
+}
+
+.card__author__image.has-image {
+  background-color: transparent;
 }
 </style>
