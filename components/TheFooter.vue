@@ -7,32 +7,6 @@
         <div class="footer__info__item">
           <span class="icon text-white">
             <client-only>
-              <font-awesome-icon :icon="['fas', 'phone-alt']" />
-            </client-only>
-          </span>
-          <div class="text font-nunito">
-            <strong class="font-nunito">
-              Phone:
-            </strong>
-            Whatsapp: (+58) 412-8580282
-          </div>
-        </div>
-        <div class="footer__info__item">
-          <span class="icon text-white">
-            <client-only>
-              <font-awesome-icon :icon="['fas', 'phone-alt']" />
-            </client-only>
-          </span>
-          <div class="text font-nunito">
-            <strong class="font-nunito">
-              Phone:
-            </strong>
-            (+54) 011 51029271
-          </div>
-        </div>
-        <div class="footer__info__item">
-          <span class="icon text-white">
-            <client-only>
               <font-awesome-icon :icon="['fas', 'envelope']" />
             </client-only>
           </span>
